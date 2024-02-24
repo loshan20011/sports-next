@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    box-sizing: none;
+}
+
+body {
+    margin: 0;
+}
+
+/* header with offer details */
+
+#offer-content {
+    background-color: #BFB170;
+    margin: 0;
+    box-shadow: 0 5 15 rgba(228, 208, 145, 0.06);
+    font-size: 12px;
+}
+
+#offer {
+    color: #FFFFFF;
+    margin: inherit;
+    padding: 7px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* slide image  */
+
+#slide-container {
+    position: relative;
+}
+
+#slide1-image {
+    width: 100%;
+    height: 100vh;
+    opacity: 85%;
+}
+ #slide2-image {
+    position: absolute;
+    height: 450px;
+    right: 6%;
+    top: 10%;    
+    transition: 0.3s ease-in-out;         
+} 
+
+#slide2-image:hover {
+    height: 460px;
+}
+
+/* text and the explore button in the image */
+
+#image-text {
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+    left: 13%;
+    color: #BFB170;
+}
+
+#image-text h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    margin: 0%;
+    text-shadow: 4px 4px 4px #252525;
+    letter-spacing: 0.1em;
+}
+#image-text h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    text-align: center;
+    margin: 0%;
+    color: #252525;
+    text-shadow: 2.5px 2.5px #BFB170;
+    letter-spacing: 0.1em;
+}
+
+#image-text .button {
+    font-size: 20px;
+    margin-top: 2%;
+    position: absolute;
+    left: 28.5%;
+    border: 2px solid #09203E;
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: #BFB170;
+    color: #09203E;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-shadow: 1px 1px #09203E;
+    box-shadow: 1px 1px #09203E;
+}
+#image-text .button:hover {
+    background-color: transparent;
+    color: #BFB170;
+}
+
+/* product tiles */
+
+/* featured products */
+
+#featured-products {
+    padding: 40px 45px;
+    position: relative;
+}
+
+#featured-products h2 , #featured-products p, #featured-products button a{
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: #0b3e64;
+    line-height: 1.65;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#featured-products h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+
+/* featured products images */
+
+#featured-products .products-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#featured-products .product{
+    width: 30%;
+    height: 400px;
+    min-width: 250px;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.034);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#featured-products #product1 {
+    background: #cfb2b2b0;
+    position: relative;
+}
+
+#featured-products #product2 {
+    background: #e2d9afc7;
+    position: relative;
+}
+
+#featured-products #product3 {
+    background: #d8d39e;
+    position: relative;
+}
+      
+#featured-products .products-container .product-back .spalding:hover {
+    background-color: #09203e4f;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 10px #09203E;
+    border: 2px solid #252525;
+  }
+
+#featured-products .products-container .product-back .spalding {
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: absolute;
+    text-align: end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5%;
+    padding-right: 1%;
+    width: 100%;
+    height: 95%;
+    transition: 0.4s ease-in-out;
+    letter-spacing: 0.1em; 
+    font-family: 'Chakra Petch', serifs;
+}
+
+#featured-products .product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+#featured-products .product img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+/* featured products text */
+
+#featured-products .text-container {
+    display: flex;
+    justify-content:space-around;
+}
+
+#featured-products .brand {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#featured-products .brand .pricing {
+    display: flex;
+    justify-content: center;
+}
+
+#featured-products .brand .pricing .discount-price {
+    padding-left: 10px;
+    color: red;
+}
+
+#featured-products .brand .pricing .actual-price {
+    text-decoration: line-through;
+}
+
+
+#featured-products .brand .brand-item {
+    color: #5d6a7a;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0;
+}   
+
+#featured-products .brand h5 {
+    margin: 0;
+    padding-top: 7px;
+    font-size: 17px;
+    color: #0b3e64;
+}
+
+#featured-products .brand .star {
+    font-size: 14px;
+    color: rgb(243, 181, 25);
+    padding-top: 3px;
+    position: relative;
+}
+
+#featured-products .brand .star .last-star {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.267);
+    padding-top: 3px;
+    position: relative;
+}
+
+#featured-products .brand h4 {
+    margin: 0;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0b3e64;
+}
+
+#featured-products .text-container .cart {
+    font-size: 25px;
+    text-align:center;
+    border: 1px solid #e2d9afef;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 13px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    padding: 8px;
+    color: #0b3d64c7;
+    transition: 0.4s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.06);
+}
+
+#featured-products .text-container .cart:hover{
+    color: black;
+}
+
+#featured-products .text-container .cart1 {
+    position: absolute;
+    left: 28.5%;
+}
+
+#featured-products .text-container .cart2 {
+    position: absolute;
+    left: 60.5%;
+}
+
+#featured-products .text-container .cart3 {
+    position: absolute;
+    left: 92%;
+}
+
+#featured-products #btn-container {
+    position: relative;
+    padding-top: 3%;
+}
+
+#featured-products .view-all-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 550;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid #252525;
+    transition: 0.1s ease;
+    letter-spacing: .2em;
+}
+
+#featured-products .view-all-btn:hover {
+    border: 3px solid #252525;
+}
+
+ /* offer-block  */
+
+#offer-block {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#offer-block #offer-bg-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#offer-block #banner-text {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    margin: 55px 0;
+    cursor: pointer;
+}
+
+#offer-block #banner-text h2 {
+    font-size: 65px;
+    color: #FFFFFF;
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#offer-block #banner-text h3{
+    font-size: 42px;
+    color: #FFFFFF;
+    margin: 0;
+    text-shadow: 1px 1px 1px #BFB170;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.2%;
+}
+
+#offer-block #banner-text h3 span, #offer-block #banner-text h2 span{
+    font-size: 42px;
+    color: #BFB170;
+    margin: 0;
+}
+
+#offer-block #banner-text input{
+    margin-right: -22.5px;
+}
+
+#offer-block #banner-text .texting-btn{   
+    border: 2px solid #BFB170;
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: #09203E;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-shadow: 1px 1px #09203E;
+    box-shadow: 1px 1px #09203E;
+    font-family: 'Chakra Petch', serifs;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#offer-block #banner-text .texting-btn:hover {
+    background-color: transparent;
+}
+
+/* top brands */
+
+#top-brands {
+    font-family: 'Chakra Petch', serifs;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #BFB170;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #09203E;
+    padding: 20px 0;
+}
+
+#top-brand-images {
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#top-brand-images .png3 {
+    width: 30%;
+}
+
+#top-brand-images img {
+    height: 225px;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+#top-brand-images img:hover {
+    opacity: 0.5;
+}
+
+/* news letter */
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 120px;
+    margin: 30px 0;  
+    margin-bottom: 0;  
+    background-image: url("../Html/images/newsletterbg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#newsletter h2{
+    padding-left: 60px;
+    margin-top: 10%;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: #09203E;
+    margin-bottom: 0;
+}
+#newsletter h1 {
+    padding-left: 60px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: black;
+}
+
+#newsletter input, #newsletter button{
+    height: 35px;
+    padding: 0 18px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #09203E;
+    border-radius: 6px;
+}
+
+#newsletter button {
+    width: 7%;
+    right: 6%;
+    margin-top: 5px;
+    position: absolute;
+    color: #BFB170;
+    background-color: #09203E;
+    cursor: pointer;
+}
+
+#editorPage {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+    border: 3px solid black;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.322);
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  #editorPage:hover{
+    color: #FFFFFF;
+    background: #BFB170;
+  }
+
+.arrow{
+    background-color: #252525;
+    height: 2rem;
+    width: 2rem;
+    color: #FFFFFF;
+    left: 0%;
+    position: fixed;
+    bottom: 0%;
+    padding-top: 0.5%;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow:hover {
+    background-color: #BFB170;
+    color: #FFFFFF;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    font-size: 1.8rem;
+}

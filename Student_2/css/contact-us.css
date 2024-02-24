@@ -1,0 +1,113 @@
+#contact-us {
+  position: relative;
+  margin: 100px 0 100px 0;
+}
+
+.box-5 {
+  padding-left: 30px;
+  font-size: 66px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  float: left;
+  color: black;
+  margin-bottom: 50px;
+}
+.flex-parent-element {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.flex-child-element map {
+  width: 50%;
+}
+
+.flex-child-element {
+  flex: 1;
+
+  margin: 10px;
+  height: 600px;
+}
+
+.flex-child-element:first-child {
+  margin-right: 20px;
+}
+
+.flex-child-element info {
+  position: relative;
+}
+
+.contact-box {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  color: black;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 40px;
+}
+.contact-item-1 {
+  position: relative;
+  height: 200px;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+.contact-item-2 {
+  position: relative;
+  height: 200px;
+  color: black;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-title {
+  text-align: center;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+.facebook-icon {
+  font-size: 0.83em;
+}
+.pinterest-icon {
+  font-size: 1.03em;
+}
+.instagram-icon {
+  font-size: 0.93em;
+}
+
+.main-icon-box {
+  margin-bottom: 25px;
+}
+
+.main-icon {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.main-icon:hover {
+  color: #bfb170;
+}
+
+.sub-icon {
+  cursor: pointer;
+}
+
+.sub-icon:hover {
+  color: #bfb170;
+}

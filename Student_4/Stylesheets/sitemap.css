@@ -1,0 +1,117 @@
+/* VIDEO SECTION */
+/* Ref: https://youtu.be/RIDA6elhmBU */
+.video-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 100%;
+  z-index: -1;
+}
+#video-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(00,00,00, 0.5);
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.heading{
+  font-weight: 500;
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+
+/* SITEMAP SECTION */
+.sitemap-area{
+  margin: 0rem 2rem 4rem 2rem;
+  display: grid;
+  justify-content: center;
+  gap: 0 30px;
+  grid-template:
+                "home home home home home home home" 1fr
+                "content-page buy-products query-form quiz student-details sitemap gallery" 1fr ;
+}
+
+#home-content{
+  height: 15%;
+}
+
+#home-content h2{
+  height: 30px;
+}
+
+.wrapper-box.first-row{
+  height: 120px;
+}
+.wrapper-box{
+  overflow: visible;
+  position: relative;
+  display: inline-block;
+  min-width: 100px;
+  max-width: 170px;
+  cursor: pointer;
+}
+.wrapper-box:visited{
+  color: black;
+}
+
+.content-box{
+  position: absolute;
+  top: 0px;
+  width: 82%;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-box h2{
+  height: 5rem
+}
+.descript-text{
+  margin-top: 5px;
+  color: var(--gray-4);
+}
+.heading-text{
+  color: black;
+}
+
+/* Sitemap Icon Resizing */
+.sitemap_icon{
+  color: black;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.arrow-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.arrow-container>svg{
+  height: 265px;
+  position: absolute;
+}
+
+/* Footer specific edits */
+footer{
+  background-color: var(--black);
+}
+.footer__content{
+  color: white;
+}
+.footer__content:hover{
+  color: var(--primary-highlight)
+}

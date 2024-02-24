@@ -1,0 +1,111 @@
+:root{
+  /** Color Theme Variables **/
+  --primary-highlight: #E5F100;
+  --light_green: #92bd25;
+  --green : #c8d303;
+  --black: #161616;
+  --gray-4: #2d2d2d;
+  --gray-3: #898989;
+  --gray-2: #D6D8CF;
+  --background-white: #F6F5F8;
+}
+
+footer{
+  background-color: #09203E;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  min-height: 150px;
+}
+.footer__content-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  padding: 5% 10%;
+
+}
+.footer__logo{
+  padding: 30% 25%;
+  color: #BFB170;
+}
+.footer__content-container >ul{
+  padding: 0;
+  list-style-type: none;
+  margin: 20%;
+}
+.footer__heading{
+  color: var(--background-white);
+  font-family: 'Chakra Petch',sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.footer__content{
+  color: #BFB170;
+  font-family: 'Chakra Petch',sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__content:hover{
+  color:white;
+}
+
+.footer__social-container{
+  margin: auto;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,80px);
+  gap: 10px;
+}
+.social-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 100%;
+  background-color: var(--background-white);
+  cursor: pointer;
+}
+.facebook-container:hover{
+  background-color: #1877F2;
+}
+.instagram-container:hover{
+  background: radial-gradient(79.06% 56.9% at 30.27% 100%, #FED276 0%, rgba(253, 189, 97, 0.975006) 17.02%, #F6804D 45.41%, rgba(232, 61, 92, 0.0001) 100%), linear-gradient(165.51deg, #4E60D3 5.38%, #913BAF 20.14%, #D52D88 84.1%, #F26D4F 108.76%);
+
+}
+.twitter-container:hover{
+  background-color: #1DA1F2;
+}
+.tiktok-container:hover{
+  /* background-color: #00F2EA; */
+  background: linear-gradient(135deg, #70C1C7 0%, #A7798F 64.09%, #EE1D52 100%);
+}
+.youtube-container:hover{
+  background-color: #FF0302;
+}
+.linkedin-container:hover{
+  background: linear-gradient(135deg, #0077b5 0%, #64c6e7 64.09%, #cbeafb 100%);
+}
+
+.fa-brands{
+  transform: scale(1.5);
+}
+
+/* Page Editor Link */
+.page-editor__link{
+  position: absolute;
+  left: 20px; 
+  bottom: 20px; 
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 20px;
+  color: var(--black);
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+}
+.page-editor__link:hover{
+  background-color: var(--primary-highlight);
+}

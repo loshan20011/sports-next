@@ -1,0 +1,71 @@
+.navbar__background *{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ 
+}
+
+.navbar__background {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 20px;
+ 
+ position: fixed;
+ z-index: 999;
+ top: 0;
+ left: 0;
+ right: 0;
+ background-color: var(--black);
+}
+
+.logo {
+ height: 50px;
+ cursor: pointer;
+ color: white;
+}
+.logo-path{
+ fill: white;
+}
+
+
+.nav_links li,
+.nav_links a {
+ font-family: "Chakra Petch", sans-serif;
+ font-weight: 500;
+ font-size: 1.1rem;
+ color: white;
+ text-decoration: none;
+}
+
+.nav_links *{
+ list-style: none;
+ box-sizing: border-box;
+ -webkit-transition: all 0.35s ease;
+ transition: all 0.5s ease;
+}
+.nav_links li {
+ display: inline-block;
+ padding: 0px 20px;
+ overflow: hidden;
+ transition: 0.3s;
+}
+.nav_links li a:hover {
+ color: var(--primary-highlight);
+}
+
+.nav_links a::before, .nav_links a::after {
+ position: absolute;
+ -webkit-transition: all 0.35s ease;
+ transition: all 0.5s ease;;
+}
+
+.nav_links li a:hover{
+    transform: translateY(100%);
+}
+
+#shopping-btn{
+    background-color: transparent;
+    border: none;
+}
+

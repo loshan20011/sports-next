@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+
+  <!--Linking Favicon-->
+  <link rel="icon" type="image/x-icon" href="Sources/favicon_io/favicon.ico">
+
+  <!-- Linking fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+
+  <!-- Linking Stylesheets-->
+  <link rel="stylesheet" href="Stylesheets/Styles.css">
+  <link rel="stylesheet" href="Stylesheets/Navbar.css">
+  <!-- <link rel="stylesheet" href="../Common-styles/navigationBar.css"> -->
+  <link rel="stylesheet" href="../Common-styles/footer.css">
+  <link rel="stylesheet" href="Stylesheets/Gallery.css">
+  
+
+  <!-- Linking awesome fonts-->
+  <script src="https://kit.fontawesome.com/5bd19b7c90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <header class="navbar__background">
+    <!--LOGO SVG-->
+    <svg class="logo" width="135" height="89" viewBox="0 0 135 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="logo-path" d="M16.9434 31.88V22.7C16.9434 21.98 16.8234 21.52 16.5834 21.32C16.3834 21.08 15.9234 20.96 15.2034 20.96H10.7634C7.12344 20.96 5.30344 19.18 5.30344 15.62V5.72C5.30344 2.2 7.16344 0.439997 10.8834 0.439997H16.7634C20.4834 0.439997 22.3434 2.2 22.3434 5.72V11.24H16.8834V6.56C16.8834 5.84 16.7634 5.38 16.5234 5.18C16.2834 4.94 15.8034 4.82 15.0834 4.82H12.5634C11.8434 4.82 11.3634 4.94 11.1234 5.18C10.8834 5.38 10.7634 5.84 10.7634 6.56V14.9C10.7634 15.62 10.8834 16.1 11.1234 16.34C11.3634 16.54 11.8434 16.64 12.5634 16.64H16.9434C20.6234 16.64 22.4634 18.4 22.4634 21.92V32.72C22.4634 36.24 20.5834 38 16.8234 38H11.0034C7.28344 38 5.42344 36.24 5.42344 32.72V27.2H10.8834V31.88C10.8834 32.6 11.0034 33.08 11.2434 33.32C11.4834 33.52 11.9634 33.62 12.6834 33.62H15.2034C15.9234 33.62 16.3834 33.52 16.5834 33.32C16.8234 33.08 16.9434 32.6 16.9434 31.88ZM27.8231 0.439997H40.1231C43.8431 0.439997 45.7031 2.2 45.7031 5.72V18.2C45.7031 21.72 43.8431 23.48 40.1231 23.48H33.2231V38H27.8231V0.439997ZM40.3031 17.36V6.56C40.3031 5.84 40.1831 5.38 39.9431 5.18C39.7031 4.94 39.2231 4.82 38.5031 4.82H33.2231V19.16H38.5031C39.2231 19.16 39.7031 19.04 39.9431 18.8C40.1831 18.56 40.3031 18.08 40.3031 17.36ZM55.8389 0.439997H62.4989C66.2189 0.439997 68.0789 2.2 68.0789 5.72V32.72C68.0789 36.24 66.2189 38 62.4989 38H55.8389C52.0789 38 50.1989 36.24 50.1989 32.72V5.72C50.1989 2.2 52.0789 0.439997 55.8389 0.439997ZM62.6789 31.88V6.56C62.6789 5.84 62.5589 5.38 62.3189 5.18C62.0789 4.94 61.5989 4.82 60.8789 4.82H57.3989C56.6789 4.82 56.1989 4.94 55.9589 5.18C55.7589 5.38 55.6589 5.84 55.6589 6.56V31.88C55.6589 32.6 55.7589 33.08 55.9589 33.32C56.1989 33.52 56.6789 33.62 57.3989 33.62H60.8789C61.5989 33.62 62.0789 33.52 62.3189 33.32C62.5589 33.08 62.6789 32.6 62.6789 31.88ZM79.4536 22.82V38H74.0536V0.439997H86.3536C90.0736 0.439997 91.9336 2.2 91.9336 5.72V17.48C91.9336 20.52 90.5936 22.26 87.9136 22.7L93.8536 38H88.0336L82.3936 22.82H79.4536ZM79.4536 4.82V18.5H84.7336C85.4536 18.5 85.9336 18.4 86.1736 18.2C86.4136 17.96 86.5336 17.48 86.5336 16.76V6.56C86.5336 5.84 86.4136 5.38 86.1736 5.18C85.9336 4.94 85.4536 4.82 84.7336 4.82H79.4536ZM113.023 0.439997V4.82H106.723V38H101.323V4.82H95.0227V0.439997H113.023ZM127.217 31.88V22.7C127.217 21.98 127.097 21.52 126.857 21.32C126.657 21.08 126.197 20.96 125.477 20.96H121.037C117.397 20.96 115.577 19.18 115.577 15.62V5.72C115.577 2.2 117.437 0.439997 121.157 0.439997H127.037C130.757 0.439997 132.617 2.2 132.617 5.72V11.24H127.157V6.56C127.157 5.84 127.037 5.38 126.797 5.18C126.557 4.94 126.077 4.82 125.357 4.82H122.837C122.117 4.82 121.637 4.94 121.397 5.18C121.157 5.38 121.037 5.84 121.037 6.56V14.9C121.037 15.62 121.157 16.1 121.397 16.34C121.637 16.54 122.117 16.64 122.837 16.64H127.217C130.897 16.64 132.737 18.4 132.737 21.92V32.72C132.737 36.24 130.857 38 127.097 38H121.277C117.557 38 115.697 36.24 115.697 32.72V27.2H121.157V31.88C121.157 32.6 121.277 33.08 121.517 33.32C121.757 33.52 122.237 33.62 122.957 33.62H125.477C126.197 33.62 126.657 33.52 126.857 33.32C127.097 33.08 127.217 32.6 127.217 31.88ZM64.1133 46.44H69.0933V84H63.6333L55.7133 56.88V84H50.7333V46.44H56.4333L64.1133 72.78V46.44ZM80.8027 79.62H91.6627V84H75.3427V46.44H91.2427V50.82H80.8027V62.4H89.4427V66.78H80.8027V79.62ZM106.889 64.8L114.929 84H108.929L103.889 69.72L98.8491 84H93.0291L100.949 64.8L93.5691 46.44H99.5691L103.889 59.94L108.269 46.44H114.149L106.889 64.8ZM133.472 46.44V50.82H127.172V84H121.772V50.82H115.472V46.44H133.472Z" fill="black"/>
+      <g clip-path="url(#clip0_287_998)">
+       <path class="logo-path" d="M6 67H5.1C5.55674 71.3259 7.48405 75.3642 10.5599 78.4401C13.6358 81.516 17.6741 83.4433 22 83.9V83C22 78.7565 20.3143 74.6869 17.3137 71.6863C14.3131 68.6857 10.2435 67 6 67ZM41.6 63.5H43C42.6579 58.9892 40.7175 54.7485 37.5279 51.5406C34.3383 48.3326 30.1088 46.368 25.6 46C25.5205 46.4622 25.487 46.9312 25.5 47.4C25.5 51.67 27.1962 55.7651 30.2156 58.7844C33.2349 61.8038 37.33 63.5 41.6 63.5ZM41.6 66.5C39.088 66.5133 36.5984 66.0283 34.2751 65.0731C31.9518 64.1179 29.841 62.7115 28.0647 60.9353C26.2885 59.159 24.8821 57.0482 23.9269 54.7249C22.9717 52.4016 22.4867 49.912 22.5 47.4C22.487 46.9312 22.5205 46.4622 22.6 46C17.9828 46.3568 13.6525 48.3789 10.4149 51.6901C7.17727 55.0013 5.25294 59.3759 5 64H6C11.0391 64 15.8718 66.0018 19.435 69.565C22.9982 73.1282 25 77.9609 25 83V84C29.6241 83.7471 33.9987 81.8227 37.3099 78.5851C40.6211 75.3475 42.6432 71.0172 43 66.4L41.6 66.5Z" fill="black"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_287_998">
+      <rect width="48" height="48" fill="white" transform="translate(0 41)"/>
+      </clipPath>
+      </defs>
+    </svg>
+      
+    <nav>
+      <!-- LINK THE PAGES HERE IN HREF-->
+      <ul class="nav_links">
+        <li><a class="inside-video" href="Content-page-basketball.html">Content Page</a></li>
+        <li><a href="#">Query Form</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Student Details</a></li>
+        <li><a href="Sitemap.html">Sitemap</a></li>
+        <li><a href="#">Gallery</a></li>
+
+        <li class="tooltip__box">
+          <a id="page__settings" class="page__settings" data-settings-active="false">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <div class="tooltip__popup">
+            <div class="font-size__container">
+              <h3>Font-size</h3>
+              <div class="font-button-container">
+                <button id="font-size__small" style="font-size: 12px">Aa</button>
+                <button id="font-size__medium" style="font-size: 16px">Aa</button>
+                <button id="font-size__large" style="font-size: 24px">Aa</button>
+              </div>
+            </div>
+            <div class="font-size__container">
+              <h3>Appearence</h3>
+              <input type="checkbox" id="modeSwitch" class="toggle">
+              <label for="modeSwitch"></label>
+            </div>
+
+            <div class="font-size__container">
+              <h3>Accent Color</h3>
+              <div class="button-container">
+                <button class="color-btn" id="green-btn" data-button-active="true"></button>
+                <button class="color-btn" id="blue-btn" data-button-active="true"></button>
+                <button class="color-btn" id="orange-btn" data-button-active="true"></button>
+                <button class="color-btn" id="random-btn" data-button-active="true"></button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Carousel Section-->
+  <section id="carousel-section">
+    <h1 class="section__heading">Stories</h1>
+    <button class="carousel-button" id="left-carousel"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+    
+    <div class="carousel-track-container">
+      <ul id="carousel-track">
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/jamie-ohara.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3> Jamie O'Hara on the situation surrounding Joao Cancelo's Manchester City exit</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Jamie-Jorginho's.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3>Jamie Carragher on Jorginho's move to Arsenal</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Hamilton-to-join-Red-Bull.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3>Christian Horner rules out a move for Sir Lewis Hamilton to join Red Bull</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Joe-Root_or_Babar-Azam.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3>Marnus Labuschagne Q & A| Joe Root or Babar Azam</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Paul-Merson's-reaction.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3>Paul Merson's reaction to Reiss Nelson's dramatic winner for Arsenal against Bournemouth</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Lewis-Hamilton-Crofty-like-that.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3> Lewis Hamilton DID NOT have to do Ted and Crofty like that</h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Tottenham-Appoint-Nagelsmann-next!.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3>Why Tottenham MUST Appoint Nagelsmann next! </h3>
+          </div>
+        </li>
+
+        <li class="carousel-item">
+          <video class="carousel-story-video" muted>
+            <source src="Video/Marcel-Sabitzer.mp4" type="video/mp4">
+          </video>
+          <div class="story-heading">
+            <h3> Manchester United & Chelsea INTERESTED in Bayern Munich's Marcel Sabitzer</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <button class="carousel-button" id="right-carousel"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+
+  </section>
+
+  <br>
+
+  <!-- News Section -->
+  <section id="news-section">
+    <h1 class="section__heading">News</h1>  
+    
+    <div class="news__container">
+      <ul class="news__item-track">
+        <li class="news__item-module">
+          <img src="news-Images/latest-news-1.jpg" alt="messi signed a two year deal">
+          <h3 class="news__headline">Everything You Need to Know About Gold Medals</h3>
+          <p class="news__content" hidden>
+            Messi signed a two-year deal with PSG in the summer of 2021; his
+            term is up for renewal in June, but negotiations are at a
+            standstill right.<br><br>
+            Lionel Messi finally signed his eagerly anticipated Paris Saint-Germain contract on Tuesday night to complete the move that confirms the end of a career-long association with Barcelona and sends PSG into a new era.The French club said in a statement that the 34-year-old Argentina star signed a two-year deal with the option for a third season.
+            “I am excited to begin a new chapter of my career at Paris Saint-Germain," Messi said. "Everything about the club matches my football ambitions. I know how talented the squad and the coaching staff are here. I am determined to help build something special for the club and the fans, and I am looking forward to stepping out onto the pitch at the Parc des Princes.”<br><br>
+            No salary details were given, but a person with knowledge of the negotiations earlier told The Associated Press that Messi is set to earn around 35 million euros ($41 million) net annually. The person said on condition of anonymity before the contract was signed.
+            “I am delighted that Lionel Messi has chosen to join Paris Saint-Germain and we are proud to welcome him and his family to Paris," PSG chairman Nasser Al-Khelaifi said. "He has made no secret of his desire to continue competing at the very highest level and winning trophies, and naturally our ambition as a club is to do the same.”
+          </p>
+          <p class="news__time">23rd, Feb 2023</p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/latest-news-3.jpg" alt="max verstappen has led a swathe of drivers">
+          <h3 class="news__headline">After winning the chaotic F1 Australian GP, Max Verstappen
+            criticizes the FIA</h3>
+          <p class="news__content" hidden>
+            Max Verstappen has led a swathe of driver criticism of the
+            decision-making at the Australian Grand Prix after the race was
+            stopped three times because of incidents on track.<br><br>
+            Max Verstappen has led a swathe of driver criticism of the decision-making at the Australian Grand Prix after the race was stopped three times because of incidents on track. The world champion dismissed it as a mess and accused the FIA, the governing body, of being responsible.
+            Verstappen won in Melbourne with a dominant display but only after three red-flag stoppages, chaos and confusion and the race finishing behind the safety car. The second red flag with four laps to go led to a standing restart from which there were multiple incidents, causing another stoppage and a further 30-minute delay.
+            <br><br>“I am very happy to have won, but the race towards the end was a bit of a mess,” he said. “I just didn’t understand why we needed a red flag. It left a lot of drivers confused. If we would have had a safety car and then a normal rolling start we wouldn’t have had all these shunts and then you have a normal finish. So they created the problems themselves.
+            “We’ll talk about it, I think it left a lot of drivers confused about why we needed a red flag. We’ll talk in Baku.”
+            Questions were also raised as to whether the stoppages, which close the field up and are followed by dramatic standing starts, were being employed merely to improve the spectacle, with six drivers involved in incidents after the second restart.<br>
+          </p>
+          <p class="news__time">22th, Feb 2023</p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/latest-news-2.jpg" alt="Lebron James">
+          <h3 class="news__headline">NBA FACT OR FICTION: LeBron James' Lakers benefit from a vast
+            free-throw discrepancy</h3>
+          <p class="news__content" hidden>
+            Let's get this out of the way right away: I think there are good
+            reasons to question the integrity of referees prior to Tim
+            Donaghy's resignation due to a gambling controversy given the
+            egregiousness of calls in a number of NBA playoff games from the
+            early 2000s.<br><br>
+            I reviewed the NBA's last two-minute reports and created the Restless Nights Index at the time to illustrate how ludicrous that statement was. In the aftermath of that game — one in which the league admitted to blowing the call in question and another that aided the Lakers in the final seconds of regulation — James' team was one of five that actually benefited from bad whistles late in close games at least 59% of the time.
+            They remain top five in that respect, and only the two teams that met in last year's Finals — the Celtics and Golden State Warriors — have been on the better side of more blown calls per game in clutch situations.
+            An updated table of the number of close games for each team, the total amount of incorrect calls or no-calls in those games, the number of those calls that went in favor of each team and the percentage of favorable calls that each team received:
+          </p>
+          <p class="news__time">15th, Feb 2023</p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/latest-news-4.jpg" alt="Harry Brook Loft">
+          <h3 class="news__headline">How Harry Brook set a lofty goal, squandered it, then went off
+            like a rocket</h3>
+          <p class="news__content" hidden>
+            But, Brook's path to the top has not been easy, like so many
+            sudden triumphs. After his bold attempt to quickly advance into
+            contention as a Test opener failed in 2019.<br><br>
+            The past 12 months have exceeded even Harry Brook's wildest expectations. In addition to winning the T20 World Cup, receiving Player of the Series honors for his performance during England's Test tours of Pakistan and New Zealand, and signing an IPL contract with Sunrisers Hyderabad for a staggering US$1.6 million, the third-highest sum paid by an IPL franchise for an English player, behind Sam Curran and Ben Stokes, the player has achieved numerous other achievements.<br><br>
+            But, Brook's path to the top has not been easy, like so many sudden triumphs. He was dropped from the Yorkshire first team in 2019 when his bold attempt to quickly advance himself into consideration as a Test opener failed, and he was forced to work his way back in by collecting runs for the second team.
+          </p>
+          <p class="news__time">27th, Feb 2023</p>
+        </li>
+
+
+        <li class="news__item-module">
+          <img src="news-Images/maquire's-dilemma.jpeg" alt="Maquire's Dilemma">
+          <h3 class="news__headline">Maguire's dilemma: Should the Man United club captain leave this summer or fight for his place?</h3>
+          <p class="news__content" hidden>
+            Harry Maguire will encounter a familiar situation when he returns to Manchester United ahead of their trip to Newcastle United this weekend after playing every minute of England's two Euro qualifiers during the international break.
+            Maguire, who is currently all but guaranteed a spot in Gareth Southgate's lineup, must wait anxiously to learn whether he will make his Saint James' Park debut against Erik ten Hag on Sunday.<br><br> Rafael Varane's availability will largely determine his chances of succeeding after sitting out United's most recent match, a 3-1 victory over Fulham, due to injury.
+            Varane and fellow World Cup winner Lisandro Martinez are Ten Hag's favoured center-back pairing; as a result, club captain Maguire has spent the majority of the season in that position.<br><br>
+            Ten Hag hasn't tried to hide that Varane and fellow World Cup winner Lisandro Martinez are his preferred partnership at centre-back, an arrangement that's meant club captain Maguire has spent most of the season out in the cold. It leaves the 30-year-old with a decision to make in the summer: either stick it out as a bit-part player at Old Trafford, or leave in search of regular football elsewhere.<br><br>
+            It says everything about Maguire's predicament that despite playing a part in England's first win in Italy since 1961 on Thursday, he still felt the need to come out fighting after the match.<br><br>
+            Ten Hag has been largely supportive of Maguire since taking over as manager, but for many fans, the centre-back remains a symbol of the team that fell apart under Ole Gunnar Solskjaer and Ralf Rangnick before the Dutch manager arrived. Maguire was keen to accept the captaincy when it was offered to him by Solskjaer following his £80 million move from Leicester in 2019, but according to sources, it has come with more pressure and scrutiny than he expected.<br><br>
+            Maguire lifted his first trophy as United captain in February after a 2-0 win over Newcastle, but it was shared with stand-in skipper Bruno Fernandes after Maguire was only asked to play the final two minutes. The England defender started United's last two games against Real Betis and Fulham, but it was the first time since August he was picked for consecutive matches. He has made just five Premier League starts all season, and two of those were the back-to-back defeats to Brighton and Brentford at the beginning of Ten Hag's reign.
+          </p>
+          <p class="news__time">1 hours ago</p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/formula1.jpeg" alt="Formula Equals">
+          <h3 class="news__headline">Formula Equal: Bid lodged for a 50:50 male, female F1 team to join in 2026</h3>
+          <p class="news__time">2 hours ago</p>
+          <p class="news__content" hidden>
+            Former British American Racing (BAR) founder Craig Pollock has confirmed he is looking to enter Formula One with a 50 percent male, 50 percent female team called Formula Equal.
+            Pollock has submitted an expression of interest to racing's governing body, the FIA, who opened up the process for finding an 11th F1 team earlier this year.<br><br>
+            "Our ambition to deliver and build opportunities and pathways for women to get to the very top level inside motorsports," Pollock told CNN Sport. "The concept and the idea was to try and build a Formula 1 team, 50 percent male, 50 percent female, which is extremely hard to do if you have an existing Formula One team; it's a lot easier with a clean sheet of paper."
+            Pollock's BAR team raced in F1 between 1999 and 2005, before being purchased by Honda, which became the famous Brawn GP team in 2009 and then Mercedes from 2010 onwards.
+            Pollock hopes to include a female driver in the line-up of his new venture, although he admits there are issues with doing that in the next few years.<br><br>
+            "We know that we are going to have to go through our academy systems. We know we're going to have to build it up because there are not enough women at the moment who are trained up to the level of Formula One and they've got to earn a place in there at the same time".
+            This year Formula One will launch its F1 Academy, a championship series primarily for teenage girls looking to start their journey up the pyramid.<br><br> The series will be closely affiliated with teams who make up the grid of the Formula 3 and Formula 2 feeder series, which F1 hopes will provide a clearer pathway to the top.
+            Formula Equal hopes to be "the first Formula One team that is truly outside of Europe", with Pollock revealing that funding discussions have taken place with a Gulf state.
+            Saudi Arabia Motorsport Company chairman HRH Prince Khalid bin Sultan Al-Abdullah Al-Faisal said during the recent Saudi Arabian Grand Prix that the nation hopes to have its own race team in the future.
+            There have been a few notable expressions of interest about 2026. The bid which gained the most media coverage was the joint Andretti-Cadillac bid, although that was met with a lukewarm response from F1's existing 10 teams, who would still need to sign off any prospective 11th entry.
+            There are lingering concerns over adding a new team into the mix and diluting the prize fund for the teams at a time when F1 is enjoying an unprecedented popularity boom.
+          </p>
+        </li>
+        <li class="news__item-module">
+          <img src="news-Images/new-york-knicks.webp" alt="Julius Randle">
+          <h3 class="news__headline">New York Knicks’ Julius Randle, NYC high schooler are making their 3-point shots count</h3>
+          <p class="news__time">3 hours ago</p>
+          <p class="news__content" hidden>
+            When Ayden Khalid initially heard about New York Knicks forward Julius Randle’s plan to donate $500 for every 3-pointer he made to the Earl Monroe New Renaissance Basketball School, the 3-point specialist at The Dalton School in New York wondered how he could be involved.
+            “My main thing is shooting 3s, so I thought it would be pretty cool for me to do it as well,” said Khalid, 16, a junior at the private school that boasts CNN anchor Anderson Cooper and actor Tracee Ellis Ross among its notable alumni. “We notified the Monroe School, created a website and went on from there.”
+            When Randle, who announced the program in November 2021, visits the Earl Monroe New Renaissance Basketball School on Tuesday afternoon, he’ll deliver a check for $880,000 that accounts for the 3-pointers he made last season.<br><br> Randle had long list of matching donors that included the Knicks, JP Morgan and the NBA Players Association.
+            And standing with Randle will be Khalid, who’ll present the Monroe School a check for $12,090 for the 3-pointers he made during his just-completed junior season.
+            “This is what New Yorkers are about — teammates and winning,” said Monroe who launched the charter school in 2021, with filmmaker Dan Klores. “Having all sorts of New Yorkers from companies, workers, students, fans, the Knicks and Ayden come together for ‘30 for 3’ shows people can work together in a truly meaningful way.”
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/swiss-open.jpeg" alt="Satwik Chirag Win">
+          <h3 class="news__headline">Swiss Open: Satwik-Chirag win men's doubles title</h3>
+          <p class="news__time">4 hours ago</p>
+          <p class="news__content" hidden>
+            In the Swiss Open 2023, a Super 300 competition, Satwiksairaj Rankireddy and Chirag Shetty defeated China's Ren Xiang Yu and Tan Qiang 21-19, 24-22. In a little under an hour, the world's No. 6 couple defeated the No. 21 pair. That was a commanding performance against a couple who hadn't lost a game all tournament.
+            This was the seventh World Tour victory of Rankireddy-career Shetty's and their first BWF doubles victory of the year.
+            The victory is a pleasant consolation after they failed to advance past the round of 16 in only one of five previous competitions in 2023. (when they lost the final of the Malaysia Open in the final). Up to this point, the season had been marred by injuries, with Rankireddy sidelined for
+
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/mumbai-indians.jpeg" alt="Mumbai Indians">
+          <h3 class="news__headline">How will Mumbai Indians cope without Jasprit Bumrah?</h3>
+          <p class="news__time">8 hours ago</p>
+          <p class="news__content" hidden>
+            Rohit Sharma (capt), Suryakumar Yadav, Tim David, Dewald Brevis, Tilak Varma, Ishan Kishan (wk), Tristan Stubbs, Vishnu Vinod, Cameron Green, Arjun Tendulkar, Ramandeep Singh, Shams Mulani, Nehal Wadhera, Hrithik Shokeen, Arshad Khan, Duan Jansen, Piyush Chawla, Kumar Kartikeya, Raghav Goyal, Jofra Archer, Jason Behrendorff, Akash Madhwal
+            Jasprit Bumrah is going to miss an entire IPL season for the first time since his debut in 2013, which will keep the fans waiting to watch him and Jofra Archer bowling in tandem for Mumbai. Bumrah's irreplaceable skills will give Rohit Sharma a headache, and his fast-bowling stocks have been depleted further with Jhye Richardson also ruled out of the IPL. Mumbai are yet to name replacements for the two quicks.<br><br>
+            Apart from those two, the rest are available for selection. The South Africans Tristan Stubbs and Dewald Brevis are not picked for the Netherlands ODIs and hence will be available for Mumbai's first game against Royal Challengers Bangalore on April 2.
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/manunited.jpeg" alt="Man United">
+          <h3 class="news__headline">Man United to step up Marcus Rashford contract talks, eye departures in summer - sources</h3>
+          <p class="news__time">10 hours ago</p>
+          <p class="news__content" hidden>
+            United are looking for a striker ahead of the summer transfer window, but Rashford remains a key part of Ten Hag's plans.
+            Sources have told ESPN that the club are ready to listen to offers for a number of senior players in a bid to increase the summer budget and navigate financial fair play constraints.
+            Scott McTominay, who scored both goals in Scotland's 2-0 win over Spain on Tuesday, is wanted by Newcastle United, while there is also interest from the Premier League and Europe in Harry Maguire, Victor Lindelof and Dean Henderson.
+            Eric Bailly and Alex Telles will be allowed to leave permanently after loan spells this season.<br><br>
+            Anthony Elanga and Brandon Williams are likely to be made available on loan, and Phil Jones and Axel Tuanzebe are set to leave at the end of their contracts in June.
+            Meanwhile, United are carrying out an internal investigation before making a decision on Mason Greenwood's future after criminal charges against the 21-year-old were dropped in February. Greenwood is under contract until 2025 but hasn't played or trained since January 2022.
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/romelu-lukau-inter-milan.jpeg" alt="Romelu Lukaku">
+          <h3 class="news__headline">Romelu Lukaku: Inter Milan stirker racially abused during Coppa Italia clash at Juventus</h3>
+          <p class="news__time">12 hours ago</p>
+          <p class="news__content" hidden>
+            In a statement released late on Tuesday, US based sports agency Roc Nation - which represents Lukaku - demanded Juventus apologise to the striker.
+            "Tonight's racist remarks made towards Romelu Lukaku by Juventus fans in Turin were beyond despicable and cannot be accepted," Roc Nation Sports International president Michael Yormark said.
+            "Before, during, and after the penalty, he was subjected to hostile and disgusting racist abuse. Romelu celebrated in the same manner he has previously celebrated goals. The referee's response was to award a yellow card to Romelu.<br><br>
+            "History repeats... Been through it in 2019.. and 2023 again..," Lukaku said in a post on Instagram on Wednesday.
+            "I hope the league really take actions for real this time because this beautiful game should be enjoyed by everyone..."
+            Inter also reiterated their stance against racism and expressed their support for Lukaku.
+            "We want to firmly reiterate that we stand united against racism and all forms of discrimination," a statement read.<br><br>
+            "Football and sport must not only be a place for emotion but also for clear and shared values, and what we saw last night in the final minutes of the Juventus vs Inter Coppa Italia semi-final in Turin has no place in our sport.
+            "This is why we reiterate our support, affection and solidarity to Romelu Lukaku, just as the world of football is doing from all over since the incident.
+            "Stay strong Rom, we stand with you!"
+            Racism has been a long-running problem in Italian football and authorities have been criticised for not taking strong enough action.
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/skysports-jofra-archer-jos-buttler.jpeg" alt="Jofra Archer">
+          <h3 class="news__headline">How are England shaping up for Cricket World Cup title defence after white-ball tour of Bangladesh?</h3>
+          <p class="news__time">1 day ago</p>
+          <p class="news__content" hidden>
+          Jos Buttler's side opened strongly, securing back-to-back wins in claiming a 2-1 ODI series win before a depleted T20 squad was swept aside in the shorter format.
+          With no further white-ball cricket until August, how are the holders of both World Cups shaping up ahead of their 50-over title defence in India come October?<br><br>
+          Instead of calling up a replacement, England went in to the T20 series light in the batting department, instead choosing to give their lower-order all-rounders - Sam Curran, Moeen Ali and 18-year-old debutant Rehan Ahmed - some greater exposure to the sort of tricky conditions that will be similar to those presented in India come the 50-over World Cup in October.<br><br>
+          "I see what they're trying to do, but the short-term view and the long-term view, you've always got to balance that as a selector. These are not stupid people, Matthew Mott, Jos Buttler, Rob Key - they know what they're doing.
+          "But I just think not having the extra batter sends the wrong message. You've got the three lions on your shirt; you're playing for England and Bangladesh deserve a bit of respect.
+          "Pay attention to this game in front of you, and if you do that then the future will look after itself."
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/skysports-kiaran-macdonald_6111508.jpg" alt="Kiaran MacDonald">
+          <h3 class="news__headline">Great Britain will boycott the IBA men's World Championships amid crisis in Olympic boxing</h3>
+          <p class="news__time">2 day ago</p>
+          <p class="news__content" hidden>
+            The decision comes amid continuing concerns about boxing's future as an Olympic sport and the participation of Russian and Belarussian teams in the World Championships.
+            The USA and Ireland are also among the countries not to enter the men's tournament, scheduled to run in Tashkent from April 30 to May 14.
+            <br><br>
+            A spokesperson for GB Boxing explained: "The decision reflects ongoing concerns about the future of boxing's place on the Olympic programme and the recent decision by IBA to allows teams of boxers from Russia and Belarus to compete under their national flags, which contravenes the International Olympic Committee's (IOC's) position on the participation of athletes from these countries.
+            <br><br>
+            "This has put further distance between IBA and the Olympic movement in addition to the significant, longstanding issues over sporting integrity, governance, transparency and financial management which the IOC has asked IBA to address to protect boxing's place on the Olympic programme.
+            "GB Boxing condemns the Russian invasion of Ukraine and has solidarity with the people, boxers, coaches and officials of Ukraine."
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/skysports-nba-eastern-conference_6103025.jpg" alt="NBA Eastern Conference">
+          <h3 class="news__headline">NBA Eastern Conference playoff and play-in race: Everything you need to know ahead of the final week of the season</h3>
+          <p class="news__time">2 days ago</p>
+          <p class="news__content" hidden>
+            Outside of the top six, those between seventh-10th will compete in a play-in tournament for the final two places in the post-season.
+            If two teams finish with the same record, their position will be determined by a tiebreaker, the first of which is the head-to-head record between the sides.<br><br>
+            The good times keep rolling on for Mikal Bridges, but the rest of his team-mates have not caught on yet.
+            While the 26-year-old averaged a sizzling 28 points per game in March, the Nets failed to follow suit, winning just one of their last seven games.<br><br>
+            Can they make it across the playoff line with the bits that work at the moment? Their 129-100 victory over the Miami Heat went a long way to making it happen; they have the tiebreaker in their hands now with the easiest remaining schedule in the NBA.
+            They face the Minnesota Timberwolves next - a game that has permutations for all the competing teams - before playing against the Detroit Pistons, Orlando Magic, and Philadelphia 76ers.
+          </p>
+        </li>
+
+        <li class="news__item-module">
+          <img src="news-Images/skysports-daniil-medvedev-aryna-sabalenka_6105934.jpg" alt="Wimbledon">
+          <h3 class="news__headline">Wimbledon lifts ban on Russian and Belarusian players who will compete as 'neutral athletes'</h3>
+          <p class="news__time">3 days ago</p>
+          <p class="news__content" hidden>
+            Last year, players from Russia and Belarus were banned from Wimbledon in response to Vladimir Putin's invasion of Ukraine.
+            The Lawn Tennis Association was hit with a fine and world ranking points were removed from last year's championships.<br><br>
+            However, the decision has now been reversed and players from Russia and Belarus will be allowed to take part at Wimbledon this summer, subject to them competing as 'neutral' athletes and complying with appropriate conditions.
+            The Lawn Tennis Association (LTA) said if the ban remained, there was "a real prospect of the termination of our membership", leading to the cancellation of events at Queen's, Eastbourne, Birmingham and Nottingham.<br><br>
+            Ian Hewitt, chairman of the All England Club, said: "We continue to condemn totally Russia's illegal invasion and our wholehearted support remains with the people of Ukraine.
+            "This was an incredibly difficult decision, not taken lightly or without a great deal of consideration for those who will be impacted.
+          </p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  
+  <footer>
+    
+    <div class="footer__content-container">
+      <div class="footer__logo">
+        <svg width="135" height="89" viewBox="0 0 135 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="logo-path" d="M16.9434 31.88V22.7C16.9434 21.98 16.8234 21.52 16.5834 21.32C16.3834 21.08 15.9234 20.96 15.2034 20.96H10.7634C7.12344 20.96 5.30344 19.18 5.30344 15.62V5.72C5.30344 2.2 7.16344 0.439997 10.8834 0.439997H16.7634C20.4834 0.439997 22.3434 2.2 22.3434 5.72V11.24H16.8834V6.56C16.8834 5.84 16.7634 5.38 16.5234 5.18C16.2834 4.94 15.8034 4.82 15.0834 4.82H12.5634C11.8434 4.82 11.3634 4.94 11.1234 5.18C10.8834 5.38 10.7634 5.84 10.7634 6.56V14.9C10.7634 15.62 10.8834 16.1 11.1234 16.34C11.3634 16.54 11.8434 16.64 12.5634 16.64H16.9434C20.6234 16.64 22.4634 18.4 22.4634 21.92V32.72C22.4634 36.24 20.5834 38 16.8234 38H11.0034C7.28344 38 5.42344 36.24 5.42344 32.72V27.2H10.8834V31.88C10.8834 32.6 11.0034 33.08 11.2434 33.32C11.4834 33.52 11.9634 33.62 12.6834 33.62H15.2034C15.9234 33.62 16.3834 33.52 16.5834 33.32C16.8234 33.08 16.9434 32.6 16.9434 31.88ZM27.8231 0.439997H40.1231C43.8431 0.439997 45.7031 2.2 45.7031 5.72V18.2C45.7031 21.72 43.8431 23.48 40.1231 23.48H33.2231V38H27.8231V0.439997ZM40.3031 17.36V6.56C40.3031 5.84 40.1831 5.38 39.9431 5.18C39.7031 4.94 39.2231 4.82 38.5031 4.82H33.2231V19.16H38.5031C39.2231 19.16 39.7031 19.04 39.9431 18.8C40.1831 18.56 40.3031 18.08 40.3031 17.36ZM55.8389 0.439997H62.4989C66.2189 0.439997 68.0789 2.2 68.0789 5.72V32.72C68.0789 36.24 66.2189 38 62.4989 38H55.8389C52.0789 38 50.1989 36.24 50.1989 32.72V5.72C50.1989 2.2 52.0789 0.439997 55.8389 0.439997ZM62.6789 31.88V6.56C62.6789 5.84 62.5589 5.38 62.3189 5.18C62.0789 4.94 61.5989 4.82 60.8789 4.82H57.3989C56.6789 4.82 56.1989 4.94 55.9589 5.18C55.7589 5.38 55.6589 5.84 55.6589 6.56V31.88C55.6589 32.6 55.7589 33.08 55.9589 33.32C56.1989 33.52 56.6789 33.62 57.3989 33.62H60.8789C61.5989 33.62 62.0789 33.52 62.3189 33.32C62.5589 33.08 62.6789 32.6 62.6789 31.88ZM79.4536 22.82V38H74.0536V0.439997H86.3536C90.0736 0.439997 91.9336 2.2 91.9336 5.72V17.48C91.9336 20.52 90.5936 22.26 87.9136 22.7L93.8536 38H88.0336L82.3936 22.82H79.4536ZM79.4536 4.82V18.5H84.7336C85.4536 18.5 85.9336 18.4 86.1736 18.2C86.4136 17.96 86.5336 17.48 86.5336 16.76V6.56C86.5336 5.84 86.4136 5.38 86.1736 5.18C85.9336 4.94 85.4536 4.82 84.7336 4.82H79.4536ZM113.023 0.439997V4.82H106.723V38H101.323V4.82H95.0227V0.439997H113.023ZM127.217 31.88V22.7C127.217 21.98 127.097 21.52 126.857 21.32C126.657 21.08 126.197 20.96 125.477 20.96H121.037C117.397 20.96 115.577 19.18 115.577 15.62V5.72C115.577 2.2 117.437 0.439997 121.157 0.439997H127.037C130.757 0.439997 132.617 2.2 132.617 5.72V11.24H127.157V6.56C127.157 5.84 127.037 5.38 126.797 5.18C126.557 4.94 126.077 4.82 125.357 4.82H122.837C122.117 4.82 121.637 4.94 121.397 5.18C121.157 5.38 121.037 5.84 121.037 6.56V14.9C121.037 15.62 121.157 16.1 121.397 16.34C121.637 16.54 122.117 16.64 122.837 16.64H127.217C130.897 16.64 132.737 18.4 132.737 21.92V32.72C132.737 36.24 130.857 38 127.097 38H121.277C117.557 38 115.697 36.24 115.697 32.72V27.2H121.157V31.88C121.157 32.6 121.277 33.08 121.517 33.32C121.757 33.52 122.237 33.62 122.957 33.62H125.477C126.197 33.62 126.657 33.52 126.857 33.32C127.097 33.08 127.217 32.6 127.217 31.88ZM64.1133 46.44H69.0933V84H63.6333L55.7133 56.88V84H50.7333V46.44H56.4333L64.1133 72.78V46.44ZM80.8027 79.62H91.6627V84H75.3427V46.44H91.2427V50.82H80.8027V62.4H89.4427V66.78H80.8027V79.62ZM106.889 64.8L114.929 84H108.929L103.889 69.72L98.8491 84H93.0291L100.949 64.8L93.5691 46.44H99.5691L103.889 59.94L108.269 46.44H114.149L106.889 64.8ZM133.472 46.44V50.82H127.172V84H121.772V50.82H115.472V46.44H133.472Z" fill="white"/>
+          <g clip-path="url(#clip0_287_998)">
+            <path class="logo-path" d="M6 67H5.1C5.55674 71.3259 7.48405 75.3642 10.5599 78.4401C13.6358 81.516 17.6741 83.4433 22 83.9V83C22 78.7565 20.3143 74.6869 17.3137 71.6863C14.3131 68.6857 10.2435 67 6 67ZM41.6 63.5H43C42.6579 58.9892 40.7175 54.7485 37.5279 51.5406C34.3383 48.3326 30.1088 46.368 25.6 46C25.5205 46.4622 25.487 46.9312 25.5 47.4C25.5 51.67 27.1962 55.7651 30.2156 58.7844C33.2349 61.8038 37.33 63.5 41.6 63.5ZM41.6 66.5C39.088 66.5133 36.5984 66.0283 34.2751 65.0731C31.9518 64.1179 29.841 62.7115 28.0647 60.9353C26.2885 59.159 24.8821 57.0482 23.9269 54.7249C22.9717 52.4016 22.4867 49.912 22.5 47.4C22.487 46.9312 22.5205 46.4622 22.6 46C17.9828 46.3568 13.6525 48.3789 10.4149 51.6901C7.17727 55.0013 5.25294 59.3759 5 64H6C11.0391 64 15.8718 66.0018 19.435 69.565C22.9982 73.1282 25 77.9609 25 83V84C29.6241 83.7471 33.9987 81.8227 37.3099 78.5851C40.6211 75.3475 42.6432 71.0172 43 66.4L41.6 66.5Z" fill="white"/>
+          </g>
+          <defs>
+          <rect width="48" height="48" fill="white" transform="translate(0 41)"/>
+          </defs>
+        </svg>
+  
+        <!--LOGO IS HERE-->
+      </div>
+  
+      <ul>
+        <li class="footer__heading">Navigate</li>
+        <li><a href="../Student_2/main.html" class="footer__content">Home</a></li>
+        <li><a href="../Student_2/comment-form.html" class="footer__content">Query form</a></li>
+        <li><a href="quiz/quizHomepage.html" class="footer__content">Quiz</a></li>
+        <li><a href="studentDetails.html" class="footer__content">Student Details</a></li>
+        <li><a href="../Student_4/Sitemap.html" class="footer__content">Sitemap</a></li>
+        <li><a href="../Student_4/Gallery.html" class="footer__content">Gallery</a></li>
+      </ul>
+  
+      <ul>
+        <li class="footer__heading">Sports</li>
+        <li><a href="../Student_2/content_page.html" class="footer__content">Badminton</a></li>
+        <li><a href="../Student_4/Content-page-basketball.html" class="footer__content">Basketball</a></li>
+        <li><a href="content-page.html" class="footer__content">Cricket</a></li>
+        <li><a href="../Student_1/Html/Content_page.html" class="footer__content">Football</a></li>
+      </ul>
+  
+      <ul>
+        <li class="footer__heading">Support</li>
+        <li><a href="studentDetails.html" class="footer__content">About Us</a></li>
+        <li><a class="footer__content">Redeem Gift</a></li>
+        <li><a href="../Student_2/main.html#contact-us" class="footer__content">Contact Us</a></li>
+      </ul>
+  
+      <div class="footer__social-container">
+        <div class="social-icon-container instagram-container"><i class="fa-brands fa-instagram"></i></div>
+        <div class="social-icon-container facebook-container"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="social-icon-container tiktok-container"><i class="fa-brands fa-tiktok"></i></div>
+        <div class="social-icon-container linkedin-container"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="social-icon-container youtube-container"><i class="fa-brands fa-youtube"></i></div>
+        <div class="social-icon-container twitter-container"><i class="fa-brands fa-twitter"></i></div>
+        
+      </div>
+    </div>
+    <a href="page-editor.html" class="page-editor__link">Editor: Nimesha Periyapperuma</a>
+  </footer>
+
+  <script src="JavaScript/Carousel.js"></script>
+  <script src="JavaScript/content-send.js"></script>
+  <script src="JavaScript/Gallery.js"></script>
+</body>
+</html>

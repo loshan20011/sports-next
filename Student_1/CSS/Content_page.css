@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+li, a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.flex-box-1 h2{
+  margin: 4.5% 0%;
+}
+
+body {
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+background: linear-gradient(to bottom, #928e8e, #FFFFFF 50%, #BFB170);
+}
+
+.top-sports h1{
+  width: 70%;
+  position: absolute;
+  top: 58%;
+  text-align: center;
+  color: linear-gradient(to bottom, #FFFFFF, #BFB170);
+  text-shadow: 1px 1px #FFFFFF;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.top-sports .top-stories #top1, .top-sports .top-stories #top2, .top-sports .top-stories #top3 {
+  position: absolute;
+  width: 19%;
+  height: 42%;
+  top: 76%;
+  border-radius: 3%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  text-shadow: 2px 2px black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 10px 10px 10px #252525;
+}
+
+.top-sports .top-stories #top1:hover, .top-sports .top-stories #top2:hover, .top-sports .top-stories #top3:hover{
+  background-color: #252525;
+  background-blend-mode: multiply;
+  color: #BFB170;
+  text-shadow: 1px 1px 0.5px #252525;
+  text-decoration: underline;
+}
+
+.top-sports .top-stories #top1{
+  left: 4%;
+  background-image: url("../Html/images/0_RpVZ6l__hj3b6TPU.jpg");
+}
+
+.top-sports .top-stories #top2{
+  left: 27.5%;
+  background-image: url("../Html/images/GCABIEFKX5FHTGTX3IXB6W7PYU.avif");
+}
+
+.top-sports .top-stories #top3{
+  left: 51%;
+  background-image: url("../Html/images/icc.jpg");
+}
+
+.navBar {
+height: 60%;
+width: 23%;
+background-color: #09203e94;
+position: fixed;
+top: 26%;
+right: 2.1%;
+z-index: 10;
+border-radius: 2%;
+}
+
+.navBar ul {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+text-transform: uppercase;
+z-index: 10;
+height: 100%;
+width: 100%;
+letter-spacing: 0.1em;
+}
+
+.navBar ul a{
+  color: #FFFFFF;
+}
+
+.navBar ul li:hover {
+  list-style: none;
+  outline: 3px solid #BFB170;
+  outline-offset: 6px;
+}
+
+.coverImage-container .coverImage{
+  width: 100%;
+  height: 87vh;
+  position: relative;
+  z-index: -1;
+  background-image: url(../Html/images/Header_fooSoccer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.coverImage-container .text {
+position: absolute;
+top: 27%;
+text-transform: uppercase;
+left: 20%;
+color: #BFB170;
+text-shadow: 1px 2px 1px #252525, 2px 2px 1px #252525;
+letter-spacing: 0.1em;
+font-size: 8em;
+font-family: 'Bebas Neue', cursive;
+}
+
+ul li {
+list-style: none;
+font-family: 'Chakra Petch', serif;
+}
+
+#rules ul {
+  margin-left: 3%;
+}
+
+#rules ul li {
+  list-style:disc;
+  padding-bottom: 1%;
+}
+.flex-container {
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+}
+
+.flex-box-1 .content1-container, .flex-box-1 .content2-container {
+  cursor: default;
+  background-color: #252525;
+  color: #BFB170;
+  border: 1.5px solid rgba(255, 255, 255, 0.918);
+  padding: 4px 6px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+  background: rgba(255, 255, 255, 0.5);
+  margin: 25px 0;
+}
+
+.flex-box-1 .content1-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 98%;
+}
+
+.flex-box-1 .content2-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  max-width: 30%;
+  border-radius: 0 0 25px 25px;
+}
+
+.flex-box-1 .content2-container li{
+  text-align: start;
+}
+
+.content2-container img{
+  width: 100%;
+  padding-top: 2%;
+  min-height: 200px;
+}
+
+.content1-container img {
+  width: 35%;
+  margin: 1%;
+}
+
+
+.flex-box-1 .content1 li:hover, .content2 li:hover{
+  text-shadow: 1px 1px 1px #252525;
+}
+
+.flex-box-1 .content1-container .content1 {
+  padding: 0 5%;
+}
+
+.flex-box-1 .content2-container .content2{
+  padding: 5%;
+}
+
+.flex-box-1 .content3-container h2{
+  margin-bottom: 3%;
+  margin-top: 0%;
+}
+
+.flex-box-1 .content3-container img{
+  width: 100%;
+  padding-bottom: 3%;
+}
+
+.flex-box-1 .gameplay {
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.content2-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ball {
+  overflow: hidden;
+  margin: 0% 5%;
+}
+
+#ball img {
+  float: left;
+  width: 35%;
+}
+
+#ball ul{
+  float: right;
+  width: 60%;
+  padding: 0%;  
+}
+
+#tournaments img {
+  width: 100%;
+  border-radius: 8%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+#tournaments .tours{
+  padding-left: 5%;
+  padding-top: 3%;
+}
+#tournaments .tours li{
+  list-style: disc;
+}
+.navigation h2{
+  background-color: #25252598;
+}
+
+.flex-box-1 #title{
+  margin-top: 15%;
+}
+
+  .flex-box-1{
+    width: 75%;
+    margin: 30px;
+  }
+
+  .flex-box-2{
+    width: 25%;
+    margin: 30px;
+  }
+  
+  .top_stories{
+    width: 100%;
+    border-radius: 10px;
+  } 
+
+  .video-container video{
+    width: 100%;
+    height: 800px; 
+  }
+
+  #editorPage {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: #BFB170;
+    text-shadow: 1px 1px 1px black;
+    border: 3px solid black;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.322);
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  
+  #editorPage a {
+    color: #252525;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #editorPage:hover{
+    color: #FFFFFF;
+    background: #BFB170;
+  }
+  
+  #editorPage a:hover{
+    color: #FFFFFF;
+  }
+
+  .arrow{
+    background-color: #252525;
+    height: 2rem;
+    width: 2rem;
+    color: #FFFFFF;
+    left: 0%;
+    position: fixed;
+    bottom: 0%;
+    padding-top: 0.5%;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow:hover {
+  background-color: #BFB170;
+  color: #FFFFFF;
+  text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+  font-size: 1.8rem;
+}

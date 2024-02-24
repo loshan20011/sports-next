@@ -1,0 +1,127 @@
+.top_section{
+    min-height: 100vh;
+   }
+   
+   /* navbar css */
+   .navbar__background{
+    position: sticky;
+    overflow: hidden;
+   }
+   
+   .student-detail{
+    margin: 0 auto;
+    aspect-ratio: 4/1;
+    width: 500px; 
+    box-shadow: 0 0 6px 1px rgba(0,0,0, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    border-radius: 12px;
+   }
+   .student-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+   }
+   
+   .student-detail__text{
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      gap: 10px;
+   }
+   
+   .label{
+    width: 85px;
+    display: inline-block;
+    font-weight: 600;
+   }
+   
+   #contributes{
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 50vw;
+   }
+   
+   .page-block{
+    padding: 20px;
+    width: 180px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    text-align: center;
+    border: solid 1px black;
+    box-shadow: 5px 5px 0 0 rgba(0,0,0, 1);
+    position: relative;
+   }
+   
+   .page-block p{
+    margin: 12% 0;
+    text-align: start;
+   }
+   
+   .page-link__button{
+    position: absolute;
+    margin: 10%;
+    padding: 5% 20%;
+    bottom: 20px;
+    border-radius: 0;
+    border: solid 1px black;
+    color: #09203E;
+    cursor: pointer;
+    background-color: var(--background-color);
+    transition: background-color .3s ease-in-out;
+   }
+   
+   .page-link__button:hover{
+    background-color: #BFB170;
+   }
+
+   
+   #editorPage {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+    border: 3px solid black;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.322);
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  #editorPage:hover{
+    color: #FFFFFF;
+    background: #BFB170;
+  }
+
+.arrow{
+  background-color: #252525;
+  height: 2rem;
+  width: 2rem;
+  color: #FFFFFF;
+  left: 0%;
+  position: fixed;
+  bottom: 0%;
+  padding-top: 0.5%;
+  text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.arrow:hover {
+  background-color: #BFB170;
+  color: #FFFFFF;
+  text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+  font-size: 1.8rem;
+}

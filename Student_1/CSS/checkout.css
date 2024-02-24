@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-image: url("../Html/images/checkout-bg.jpg");
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  filter: blur(2px);
+}
+
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+/* header with offer details */
+
+#offer-content {
+    background-color: #09203E;
+    margin: 0;
+    box-shadow: 0 5 15 rgba(228, 208, 145, 0.06);
+    font-size: 12px;
+}
+
+#offer {
+    color: #FFFFFF;
+    padding: 7px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* checkout page */
+
+#checkout{
+  position: relative;
+  width: 78%;
+  margin: 3.5% 12%;
+  background-color: #09203E;
+}
+
+.checkout-section {
+  display: inline-block;
+  min-height: 87vh;
+}
+
+#checkout-total {
+  padding: 15px 10px;
+  background: #bfb070ee;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 38%;
+}
+
+#checkout-details {
+  background: #bfb070ee;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 62%;
+}
+
+#checkout-details #contact-details {
+  padding: 7px 20px;
+}
+
+#checkout-details .expiry-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+#checkout-details #expiry {
+  padding-left: 50px;
+  color: #252525;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#checkout-details #security {
+  margin-right: 50px;
+  color: #252525;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.checkout-section .input-text {
+  padding: 0.90em 0.75em;
+  width: 82.5%;
+  margin: 10px 3px 0px 50px;
+  border: none;
+}
+
+#checkout-details .mail-checkbox {
+  margin: 10px 10px 5px 5px;
+  margin-left: 50px;
+  width: 14px;
+  height: 14px;
+}
+
+#checkout-total .accepted-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+#checkout-total .accepted-cards img{
+  width: 45px;
+  height: 30px;
+}
+
+.checkout-section .two-text {
+  display: inline-block;
+  padding: 0.90em 0.75em;
+  width: 47.0%;
+  margin: 0px 2px 0px 2px;
+  border: none;
+}
+
+.checkout-section .two-box{
+  margin: 10px 50px;
+}
+
+.checkout-section .emailCondition {
+  padding-left: 8%;
+  padding-top: 1%;
+  opacity: 0;
+}
+
+.checkout-section .nameCondition {
+  padding-top: 1%;
+  padding-left: 2%;
+  opacity: 0;
+}
+
+.checkout-section .nameCondition.active1, .checkout-section .emailCondition.active1 {
+  opacity: 1;
+  color: red;
+}
+
+.edit-form .mobileCondition, .edit-form .holderCondition, .edit-form .cardCondition, .edit-form .codeCondition, .edit-form .yearCondition {
+  opacity: 0;
+  padding-left: 1%;
+}
+
+.edit-form .mobileCondition.active2, .edit-form .holderCondition.active2, .edit-form .cardCondition.active2, .edit-form .codeCondition.active2, .edit-form .yearCondition.active2 {
+  opacity: 1;
+  color: red;
+}
+
+.checkout-section .accepted-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-section .accepted-cards .edit1 {
+  margin-right: 25px;
+  height: 22px;
+  border-radius: 5px;
+  padding: 0 8px;
+  border: 0.5px solid #09203E;
+  background: #09203e36;
+  text-shadow: 0.5px 0.5px 0.5px #09203E;
+  cursor: pointer;
+}
+
+.checkout-section .accepted-cards .edit1:hover {
+  background: #09203e4d;
+  color: #FFFFFF;
+}
+
+.checkout-section .text-box {
+  display: inline-block;
+  padding: 0.30em 0.75em;
+  width: 47%;
+  border: none;
+  background: none;
+  color: #09203E;
+  text-shadow: 1px 1px 0.5px black, 0 0 1px #09203E, 0 0 1px #09203E, 0 0;
+  font-size: 20px;
+}
+
+.checkout-section .text-box1 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0.20em 0.50em;
+  width: 10%;
+  border: none;
+  background: none;
+  color: #09203E;
+  text-shadow: 1px 1px 0.5px black, 0 0 1px #09203E, 0 0 1px #09203E, 0 0;
+}
+
+.checkout-section .two-box img {
+  width: 35px;
+  position: absolute;
+  border: none;
+  padding: 0; margin: 0;
+  background: transparent;
+  margin-right: 115px;
+}
+
+.checkout-section .two-box #code {
+  margin-left: 120px;
+  width: 15%;
+}
+
+.checkout-section .two-box #calenderY {
+  width: 15%;
+}
+
+.checkout-section .address {
+  width: 82%;
+  margin-left: 50px;
+  margin-top: 2.5%;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #09203E;
+  text-shadow: 1px 1px 0.5px black, 0 0 1px #09203E, 0 0 1px #09203E, 0 0;
+}
+
+.checkout-section .proceed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-section #proceed-btn, .checkout-section .proceed #cancel-btn {
+  padding: 6px 15px;
+  top: 90%;
+  position: absolute;
+  border-radius: 5px;
+  background: #09203e36;  
+  text-shadow: 0.5px 0.5px 0.5px #09203E;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.checkout-section #proceed-btn:hover, .checkout-section .proceed #cancel-btn:hover,.checkout-section #coupon-enter:hover {
+  background: #09203e4d;
+  color: #FFFFFF;
+}
+
+.checkout-section #coupon-enter {
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-section #proceed-btn {
+  right: 5%;
+}
+
+.checkout-section .proceed #cancel-btn {
+  left: 5%;
+  z-index: 0;
+  color: #252525;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.checkout-section .proceed a {
+  text-decoration: none;
+}
+
+#editorPage {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  color: #09203E;
+  text-shadow: 1px 1px 1px black;
+  border: 3px solid black;
+  padding: 4px 6px;
+  background: rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#editorPage:hover{
+  background: #BFB170;
+}
+
+/* edit form */
+
+.edit-form {
+  position: fixed;
+  left: 13.5%;
+  opacity: 0;
+  transition: 0.8s ease-out;
+  top: 12%;
+  height: 0%;
+  width: 0%;
+  background-color: #BFB170;
+  border: 2px solid #09203E;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.edit-form.active {
+  opacity: 1;
+  width: 45%;
+  height: 85%;
+}
+
+.edit-form .input1{
+  padding: 0.60em 0.55em;
+  width: 12%;
+  margin: 2% 0 0 0;
+  border: none;
+}
+
+.edit-form .edit-details {
+  margin: 3%;
+  height: 93%;
+  width: 94%;
+}
+
+.edit-form .edit-details #holder {
+  margin-top: 2%;
+}
+
+.checkout-section .accepted-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-section .accepted-cards .secret {
+  margin-left: 11%;
+}
+
+.edit-form .edit-address {
+  margin: 3% 0;
+  margin-top: 1%;
+}
+
+.edit-form .edit-address input, .edit-form .edit-address select {
+  margin: 5px 0;
+}
+
+.edit-form .edit-address #address1, .edit-form .edit-address #address2, .edit-form .edit-address #address3 {
+  width: 95%;
+}
+
+.edit-form .edit-details #submit-edit-btn {
+  right: 5%;
+  border-radius: 12%;
+  padding: 5px;
+  border: 1px solid #09203E;
+  position: absolute;
+  bottom: 1.5%;
+  background: #09203e36;
+  text-shadow: 0.5px 0.5px 0.5px #09203E;
+}
+
+.edit-form #mobile-no {
+  margin-left: 0 ;
+  width: 95%;
+}
+
+#checkout-total #discount {
+  text-align: center;
+  margin: 10% 4%;
+  padding-left: 10px;
+}
+
+#checkout-total #discount .discount-code {
+  display: flex;
+}
+
+#checkout-total #discount #coupon-code {
+  height: 35px;
+  border-radius: 11px;
+  padding-left: 5px;
+  position: relative;
+  margin-left: 7.5%;
+  border: none;
+}
+
+#checkout-total #discount button{
+  position: absolute;
+  margin-top: 0%;
+  right: 8%;
+  background: #09203e36;
+  text-shadow: 0.5px 0.5px 0.5px #09203E;
+}
+
+#checkout-total #total-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25% 0%;
+  padding: 20px 0px;
+} 
+
+#checkout-total #total-container .line {
+  border: 1px solid #09203E;
+}
+
+#checkout-total #total-container .total-area {
+  align-items: start;
+  text-transform: uppercase;
+}
+  
+#checkout-total #total-container .total-area h3 {
+  padding-bottom: 15px;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+} 
+
+#checkout-total #total-container .total-area h2 {
+  font-size: 33px;
+  text-shadow: 1px 1px 1px #09203E;
+  letter-spacing: 0.1em;
+}
+
+.terms-checkbox {
+  margin-left: 5%;
+}
+
+.coupon-text {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.placeHolderColor::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+.discountBtnHide {
+  display: none;
+}
+
+.heading {
+  padding-left: 20px;
+}
+
+

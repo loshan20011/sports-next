@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;1,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+:root{
+  /** Color Theme Variables **/
+  --primary-highlight: #E5F100;
+  --light_green: #92bd25;
+  --green : #c8d303;
+  --black: #161616;
+  --gray-4: #2d2d2d;
+  --gray-3: #898989;
+  --gray-2: #D6D8CF;
+  --background-white: #F6F5F8;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+/* ------Fonts CSS------ */
+h1{
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 15px;
+}
+
+h2{
+  font-family: 'Teko', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h3{
+  font-family: 'teko', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+h4{
+  font-family: 'Chakra Petch', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 27px;
+}
+p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+}
+
+h2,p{
+  margin: 0px;
+}
+
+/* ------Buttons CSS------ */
+.btn{
+  width: 182px;
+  height: 48px;
+  border-radius: 24px;
+  /*Button font*/
+  color: var(--black);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.primary{
+  background-color: var(--primary-highlight);
+  border: none;
+}
+
+.primary:hover{
+  background-color: #EFF398;
+  color: var(--gray-4);
+}
+
+.primary:active{
+  background-color: #D5E000;
+  color: var(--black);
+}
+
+
+
+
+body{
+  background-color: var(--background-white);
+  margin: 0;
+}
+
+/* .navbar{
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--background-white);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+  flex-grow: 4;
+}
+
+.navbar-list{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+  gap: 2rem;
+  flex-grow: 2;
+}
+
+
+.sitemap-area{
+  background-color: #EFF398;
+} */
+

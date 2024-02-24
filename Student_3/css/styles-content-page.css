@@ -1,0 +1,181 @@
+.cover{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.content-name {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  text-shadow: 1px 1px 2px black;
+}
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.flex-box-1{
+  width: 70%;
+  /* width: 100%; */
+  /* border: 1px solid red; */
+  height: auto;
+  color: black;
+  font-size: 30px;
+  /* text-align: center; */
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.flex-box-2{
+  width: 30%;
+  /* width: 100%; */
+  /* border: 1px solid red; */
+  height: 350px;
+  color: black;
+  font-size: 30px;
+  /* text-align: center; */
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.flex-box-quiz-2 {
+  width: 40%;
+  position: relative;
+  height: auto;
+  background: white;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.flex-box-quiz-1 {
+  width: 60%;
+  height: auto;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.top_stories{
+  width: 100%;
+  border-radius: 10px;
+} 
+.image-1{
+  width: 100%;
+}
+.image-2{
+  width: 100%;
+}
+
+/* li{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+} */
+
+.content-heading {
+  padding-top: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.description ul {
+  list-style: none;
+  margin: 0 15px; 
+}
+
+.content_navigator {
+  font-family: 'Chakra Petch', serifs;
+}
+
+.description li {
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+video {
+  margin-top: 10px;
+}
+
+.sport{
+  position: relative;
+  left: 40%;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.content-box-story-1{
+    position: relative;
+    /* height: 200px; */
+    /* color: black; */
+    font-size: 18px;
+    text-align: left;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.flex-container-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.editor {
+  position: absolute;
+  z-index: 999;
+  font-size: 17.5px;
+  color: #e0ab57b1;
+  bottom: 10%;
+  right: 1%;
+}
+
+.back-to-top-before {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #09203E;
+  border-radius: 10px;
+  padding: 12px;
+  padding-top: 88px;
+  z-index: 999;
+  opacity: 1;
+}
+
+.back-to-top-after {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  
+  padding: 12px;
+  z-index: 999;
+  opacity: 0;
+}
+
+.back-to-top-after:hover {
+  opacity: 1;
+}
+
+.back-to-top-after .top-text {
+  margin:0px 0 10px 5px;
+  color: #fff;;
+}

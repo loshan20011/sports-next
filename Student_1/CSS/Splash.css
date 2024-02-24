@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&display=swap');
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.tit {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 7em;
+    font-family: 'Cormorant Garamond', serif;
+    animation: tit-anime 2s;
+}
+
+.s1 {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    animation: left-anime 2.5s;
+}
+
+.s2 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    animation: left-anime 2.5s;
+}
+
+.s3 {
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    animation: right-anime 2.5s;
+}
+
+.s4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    animation: right-anime 2.5s;
+}
+
+@keyframes tit-anime {
+    0% {
+        font-size: 1px;
+    }   
+    
+    100% {
+        font-size: 7em;
+    }
+}
+
+@keyframes left-anime {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+    100% {
+        left: 10%;
+        opacity: 1;
+    }   
+}
+
+@keyframes right-anime {
+    0% {
+        right: 0%;
+        opacity: 0;
+    }
+    100% {
+        right: 10%;
+        opacity: 1;
+    }
+}

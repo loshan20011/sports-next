@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+/* header with offer details */
+
+#offer-content {
+    background-color: #BFB170;
+    margin: 0;
+    box-shadow: 0 5 15 rgba(228, 208, 145, 0.06);
+    font-size: 12px;     
+}
+
+#offer {
+    color: #FFFFFF;
+    margin: inherit;
+    padding: 7px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* product tiles */
+
+/* featured products */
+
+#featured-products {
+    padding: 20px 45px;
+    position: relative;
+}
+
+#featured-products h2 , #featured-products p{
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: #0b3e64;
+    line-height: 1.65;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#featured-products h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+
+/* featured products images */
+
+.text-container .product{
+    width: 300px;
+    height: 280px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.034);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#featured-products .product2 {
+    background: #e2d9afc7;
+}
+
+#featured-products .product img{
+    padding-top: 28px;
+    align-items: center;
+    width: 72%;
+    height: 80%;
+}
+
+#featured-products .product .img1 {
+    width: 100%;
+    height: 95%;
+}
+
+#featured-products .product .img1:hover {
+    width: 103%;
+    height: 98%;
+}
+
+#featured-products .product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#featured-products .product img:hover{
+    width: 74%;
+    height: 82%;
+}
+
+/* featured products text */
+
+#featured-products .text-container {
+    display: flex;
+    justify-content:space-around;
+}
+
+#featured-products .brand {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#featured-products .brand .brand-item {
+    color: #5d6a7a;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0;
+}   
+
+#featured-products .brand h5 {
+    margin: 0;
+    padding-top: 7px;
+    font-size: 17px;
+    color: #0b3e64;
+}
+
+#featured-products .brand .star {
+    font-size: 14px;
+    color: rgb(243, 181, 25);
+    padding-top: 3px;
+    position: relative;
+}
+
+#featured-products .brand h4 {
+    margin: 0;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0b3e64;
+}
+
+#featured-products .text-container .cart {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    text-align:center;
+    border-radius: 50%;
+    bottom: 13px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    padding: 8px;
+    color: #0b3d64c7;
+    background-color: #bfb0709d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.685);
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 99;
+    position: relative;
+}
+
+#featured-products .text-container .cart i {
+    opacity: 1;
+}
+
+#featured-products .text-container .cart:hover{
+    opacity: 1;
+}
+
+#featured-products button {
+    display: block;
+    margin: 30px auto;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#featured-products .view-all-btn a {
+    font-weight: 550;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* cart */
+
+.myCart {
+    position: fixed;
+    opacity: 0;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    bottom: 0%;
+    background: #d8d39e;
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+    transition: 0.6s ease-in;
+    /* overflow auto makes the content scrollable */
+    overflow: auto;
+    border-radius: 50px 0;
+  }
+
+  .myCart.active {
+    opacity: 1;
+    bottom: 0%;
+    height: 50vh;
+  }
+  
+  .myCart-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px #BFB170;
+    color: #09203E;
+  }
+
+
+.myCart .cart-division .cart-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.myCart .cart-division .cart-items{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.myCart .cart-division .cart-item .quantity{
+    width: 38px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.myCart .cart-division .cart-item .price{
+    right: 1%;
+    position: relative;
+}
+
+.myCart .cart-division .remove{
+    width: 85px;
+    height: 25px;  
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #09203E;
+}
+
+
+.myCart img {
+    height: 110px;
+    width: 145px;
+    padding: 0 15px;
+}
+
+.myCart .cart-division {
+    margin: 0 15px;
+}
+
+.myCart #close-shopping-btn{
+    padding-right: 30px;
+    padding-top: 15px;    
+    border: none;
+    background: transparent;
+    right: 0%;
+    position: fixed;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.myCart #close-shopping-btn:hover{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px black, 1px 1px 1px black, 1px 1px 1px black;
+}
+
+#total-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    text-transform: uppercase;
+}
+
+#total-cart #total-container #calculation, #total-cart #total-container #price{
+    padding-top: 10px;
+}
+
+#total-cart #total-container #checkout{
+    text-align: center;
+    font-size: 42px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 0.1em;
+}
+
+#total-cart #total-container #price{
+    padding-left: 60px;
+}
+
+#total-cart #total-container #price button{
+    border-radius: 4px;
+    background: transparent;
+    padding: 4px 2px;
+    margin: 15px 0;
+    color: black;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#total-cart #total-container #price button:hover {
+    color: white;
+    text-shadow: 2px  2px  1x black;
+}
+
+#total-cart #total-container #price .proceed{
+    margin-right: 35px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#total-cart #total-container #price #clear{
+    margin-right: 8px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#total-cart #total-container #price h2, #total-cart #total-container #calculation h2 {
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #09203E;
+    letter-spacing: 0.1em;
+}
+
+#total-cart #total-container #price h3, #total-cart #total-container #calculation h3 {
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    padding-bottom: 15px;
+}
+
+#total-cart #total-container #pricing{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#total-cart #discount {
+    text-transform: capitalize;
+}
+
+#total-cart #discount button{
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.myCart #total-cart{
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+
+/* when cart open which makes background blur */
+
+.bg {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: #09203e6b;
+    filter: blur(10px);
+    top: 0%;
+    left: 0%;
+    display: none;
+    position: absolute;
+}
+
+.bg.activate {
+    display: block;
+}
+
+
+#editorPage {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+    border: 3px solid black;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.322);
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  #editorPage:hover{
+    color: #FFFFFF;
+    background: #BFB170;
+  }
+
+.arrow{
+    background-color: #252525;
+    height: 2rem;
+    width: 2rem;
+    color: #FFFFFF;
+    left: 0%;
+    position: fixed;
+    bottom: 0%;
+    padding-top: 0.5%;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow:hover {
+    background-color: #BFB170;
+    color: #FFFFFF;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    font-size: 1.8rem;
+}

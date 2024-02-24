@@ -1,0 +1,91 @@
+footer {
+  background-color: #09203e;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: min-max(150px);
+}
+.footer__content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  padding: 5% 10%;
+}
+.footer__logo {
+  padding: 30% 25%;
+}
+.footer__content-container > ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 20%;
+}
+.footer__heading {
+  color: var(--background-white);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.footer__content {
+  color: var(--gray-2);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__content:hover {
+  color: var(--primary-highlight);
+}
+
+.footer__social-container {
+  margin: auto;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+}
+.social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  width: 100%;
+  background-color: var(--background-white);
+  cursor: pointer;
+}
+.facebook-container:hover {
+  background-color: #1877f2;
+}
+.instagram-container:hover {
+  background: radial-gradient(
+      79.06% 56.9% at 30.27% 100%,
+      #fed276 0%,
+      rgba(253, 189, 97, 0.975006) 17.02%,
+      #f6804d 45.41%,
+      rgba(232, 61, 92, 0.0001) 100%
+    ),
+    linear-gradient(
+      165.51deg,
+      #4e60d3 5.38%,
+      #913baf 20.14%,
+      #d52d88 84.1%,
+      #f26d4f 108.76%
+    );
+}
+.twitter-container:hover {
+  background-color: #1da1f2;
+}
+.tiktok-container:hover {
+  background: linear-gradient(135deg, #70c1c7 0%, #a7798f 64.09%, #ee1d52 100%);
+}
+.youtube-container:hover {
+  background-color: #ff0302;
+}
+.pinterest-container:hover {
+  background-color: #e60019;
+}
+
+.fa-brands {
+  transform: scale(1.5);
+}

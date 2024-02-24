@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Main Page</title>
+
+    <!-- Internal css -->
+    <link rel="stylesheet" href="./css/styles.css" >
+    <link rel="stylesheet" href="../Common-styles/footer.css" >
+    <link rel="stylesheet" href="../Common-styles/styles.css" >
+    <link rel="stylesheet" href="../Common-styles/navigationBar.css" >
+    <link rel="stylesheet" href="./css/banner-slider.css" >
+    <link rel="stylesheet" href="./css/latest-news.css" >
+    <link rel="stylesheet" href="./css/shop-now.css" >
+    <link rel="stylesheet" href="./css/products-banner.css" >
+    <link rel="stylesheet" href="./css/quiz.css" >
+    <link rel="stylesheet" href="./css/video-banner.css" >
+    <link rel="stylesheet" href="./css/contact-us.css" >
+    <link rel="icon" type="image/x-icon" href="../Favicons/favicon-32x32.png" >
+
+    <!-- External css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+
+    <!-- External Js -->
+    <script
+      src="https://kit.fontawesome.com/5bd19b7c90.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <!-- Navigation Begin -->
+    <header>
+      <a href="../Student_2/main.html">
+        <svg
+          class="logo"
+          width="135"
+          height="89"
+          viewBox="0 0 135 89"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="white"
+            class="logo-path"
+            d="M16.9434 31.88V22.7C16.9434 21.98 16.8234 21.52 16.5834 21.32C16.3834 21.08 15.9234 20.96 15.2034 20.96H10.7634C7.12344 20.96 5.30344 19.18 5.30344 15.62V5.72C5.30344 2.2 7.16344 0.439997 10.8834 0.439997H16.7634C20.4834 0.439997 22.3434 2.2 22.3434 5.72V11.24H16.8834V6.56C16.8834 5.84 16.7634 5.38 16.5234 5.18C16.2834 4.94 15.8034 4.82 15.0834 4.82H12.5634C11.8434 4.82 11.3634 4.94 11.1234 5.18C10.8834 5.38 10.7634 5.84 10.7634 6.56V14.9C10.7634 15.62 10.8834 16.1 11.1234 16.34C11.3634 16.54 11.8434 16.64 12.5634 16.64H16.9434C20.6234 16.64 22.4634 18.4 22.4634 21.92V32.72C22.4634 36.24 20.5834 38 16.8234 38H11.0034C7.28344 38 5.42344 36.24 5.42344 32.72V27.2H10.8834V31.88C10.8834 32.6 11.0034 33.08 11.2434 33.32C11.4834 33.52 11.9634 33.62 12.6834 33.62H15.2034C15.9234 33.62 16.3834 33.52 16.5834 33.32C16.8234 33.08 16.9434 32.6 16.9434 31.88ZM27.8231 0.439997H40.1231C43.8431 0.439997 45.7031 2.2 45.7031 5.72V18.2C45.7031 21.72 43.8431 23.48 40.1231 23.48H33.2231V38H27.8231V0.439997ZM40.3031 17.36V6.56C40.3031 5.84 40.1831 5.38 39.9431 5.18C39.7031 4.94 39.2231 4.82 38.5031 4.82H33.2231V19.16H38.5031C39.2231 19.16 39.7031 19.04 39.9431 18.8C40.1831 18.56 40.3031 18.08 40.3031 17.36ZM55.8389 0.439997H62.4989C66.2189 0.439997 68.0789 2.2 68.0789 5.72V32.72C68.0789 36.24 66.2189 38 62.4989 38H55.8389C52.0789 38 50.1989 36.24 50.1989 32.72V5.72C50.1989 2.2 52.0789 0.439997 55.8389 0.439997ZM62.6789 31.88V6.56C62.6789 5.84 62.5589 5.38 62.3189 5.18C62.0789 4.94 61.5989 4.82 60.8789 4.82H57.3989C56.6789 4.82 56.1989 4.94 55.9589 5.18C55.7589 5.38 55.6589 5.84 55.6589 6.56V31.88C55.6589 32.6 55.7589 33.08 55.9589 33.32C56.1989 33.52 56.6789 33.62 57.3989 33.62H60.8789C61.5989 33.62 62.0789 33.52 62.3189 33.32C62.5589 33.08 62.6789 32.6 62.6789 31.88ZM79.4536 22.82V38H74.0536V0.439997H86.3536C90.0736 0.439997 91.9336 2.2 91.9336 5.72V17.48C91.9336 20.52 90.5936 22.26 87.9136 22.7L93.8536 38H88.0336L82.3936 22.82H79.4536ZM79.4536 4.82V18.5H84.7336C85.4536 18.5 85.9336 18.4 86.1736 18.2C86.4136 17.96 86.5336 17.48 86.5336 16.76V6.56C86.5336 5.84 86.4136 5.38 86.1736 5.18C85.9336 4.94 85.4536 4.82 84.7336 4.82H79.4536ZM113.023 0.439997V4.82H106.723V38H101.323V4.82H95.0227V0.439997H113.023ZM127.217 31.88V22.7C127.217 21.98 127.097 21.52 126.857 21.32C126.657 21.08 126.197 20.96 125.477 20.96H121.037C117.397 20.96 115.577 19.18 115.577 15.62V5.72C115.577 2.2 117.437 0.439997 121.157 0.439997H127.037C130.757 0.439997 132.617 2.2 132.617 5.72V11.24H127.157V6.56C127.157 5.84 127.037 5.38 126.797 5.18C126.557 4.94 126.077 4.82 125.357 4.82H122.837C122.117 4.82 121.637 4.94 121.397 5.18C121.157 5.38 121.037 5.84 121.037 6.56V14.9C121.037 15.62 121.157 16.1 121.397 16.34C121.637 16.54 122.117 16.64 122.837 16.64H127.217C130.897 16.64 132.737 18.4 132.737 21.92V32.72C132.737 36.24 130.857 38 127.097 38H121.277C117.557 38 115.697 36.24 115.697 32.72V27.2H121.157V31.88C121.157 32.6 121.277 33.08 121.517 33.32C121.757 33.52 122.237 33.62 122.957 33.62H125.477C126.197 33.62 126.657 33.52 126.857 33.32C127.097 33.08 127.217 32.6 127.217 31.88ZM64.1133 46.44H69.0933V84H63.6333L55.7133 56.88V84H50.7333V46.44H56.4333L64.1133 72.78V46.44ZM80.8027 79.62H91.6627V84H75.3427V46.44H91.2427V50.82H80.8027V62.4H89.4427V66.78H80.8027V79.62ZM106.889 64.8L114.929 84H108.929L103.889 69.72L98.8491 84H93.0291L100.949 64.8L93.5691 46.44H99.5691L103.889 59.94L108.269 46.44H114.149L106.889 64.8ZM133.472 46.44V50.82H127.172V84H121.772V50.82H115.472V46.44H133.472Z"
+          />
+          <g clip-path="url(#clip0_287_998)">
+            <path
+              fill="white"
+              class="logo-path"
+              d="M6 67H5.1C5.55674 71.3259 7.48405 75.3642 10.5599 78.4401C13.6358 81.516 17.6741 83.4433 22 83.9V83C22 78.7565 20.3143 74.6869 17.3137 71.6863C14.3131 68.6857 10.2435 67 6 67ZM41.6 63.5H43C42.6579 58.9892 40.7175 54.7485 37.5279 51.5406C34.3383 48.3326 30.1088 46.368 25.6 46C25.5205 46.4622 25.487 46.9312 25.5 47.4C25.5 51.67 27.1962 55.7651 30.2156 58.7844C33.2349 61.8038 37.33 63.5 41.6 63.5ZM41.6 66.5C39.088 66.5133 36.5984 66.0283 34.2751 65.0731C31.9518 64.1179 29.841 62.7115 28.0647 60.9353C26.2885 59.159 24.8821 57.0482 23.9269 54.7249C22.9717 52.4016 22.4867 49.912 22.5 47.4C22.487 46.9312 22.5205 46.4622 22.6 46C17.9828 46.3568 13.6525 48.3789 10.4149 51.6901C7.17727 55.0013 5.25294 59.3759 5 64H6C11.0391 64 15.8718 66.0018 19.435 69.565C22.9982 73.1282 25 77.9609 25 83V84C29.6241 83.7471 33.9987 81.8227 37.3099 78.5851C40.6211 75.3475 42.6432 71.0172 43 66.4L41.6 66.5Z"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_287_998">
+              <rect
+                width="48"
+                height="48"
+                fill="white"
+                transform="translate(0 41)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="../Student_1/Html/cw-home.html" data-hover="Buy Products"
+              >Buy Products</a
+            >
+          </li>
+          <li>
+            <a href="../Student_2/comment-form.html" data-hover="Query Form"
+              >Query Form</a
+            >
+          </li>
+          <li>
+            <a href="../Student_3/quiz/quizHomepage.html" data-hover="Quiz"
+              >Quiz</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Student_3/studentDetails.html"
+              data-hover="Student Details"
+              >Student Details</a
+            >
+          </li>
+          <li>
+            <a href="../../Student_4/Sitemap.html" data-hover="Sitemap"
+              >Sitemap</a
+            >
+          </li>
+          <li>
+            <a href="../../Student_4/Gallery.html" data-hover="Gallery"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Navigation End -->
+
+    <!-- Video Background Slider Start -->
+
+    <!-- 
+      1 - replace videos 
+      2 - change coded variabled to prevent plagarism 
+    -->
+
+    <div>
+      <div id="main">
+        <video
+          class="video-bg active"
+          src="./assets/videos/banner_video_1.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+        <video
+          class="video-bg"
+          src="./assets/videos//banner_video_2.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+        <video
+          class="video-bg"
+          src="./assets/videos/banner_video_4.mp4"
+          muted
+          autoplay
+          loop
+        ></video
+        ><video
+          class="video-bg"
+          src="./assets/videos/banner_video_3.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+
+        <div class="main-text">
+          <div class="banner-title" id="banner-title">Badminton</div>
+          <div class="banner-description" id="banner-description">
+            Racquets are used in the racquet sport of badminton to hit a shuttlecock through a net. 
+            The most popular versions of the game are singles (with one player each side) and doubles,
+             though it can also be played with bigger teams (with two players per side).
+              While formal matches are conducted on a rectangular indoor court, 
+              badminton is frequently played as a recreational outdoor pastime in a yard or on a beach.
+               The shuttlecock must land inside the other team's half of the court in order to score a point.
+          </div>
+          <div class="banner-link">
+
+              <button id="banner-link" class=" read-more"
+                onclick="window.location.href='../Student_2/content_page.html' " 
+               ><span>Read more</span></button>
+          </div>
+        </div>
+        <div>
+
+            <div class="slider-buttons">
+              <div class="slide-btn"></div>
+              <div class="slide-btn"></div>
+              <div class="slide-btn"></div>
+              <div class="slide-btn"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+    <!-- Video Background Slider End -->
+
+    <!-- Latest News Start -->
+
+    <div>
+      <div class="latest-news-container">
+        <div class="box-1">Latest News</div>
+        <div class="box-2">
+          <a href="../Student_4/Gallery.html"
+            ><span> <i class="fa-sharp fa-regular fa-newspaper"></i></span
+            ><span>All news</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="latest-news">
+      <div class="flex-container">
+        <div class="flex-box news__item-module">
+          <div class="date">
+            <span>12</span><br>
+            <span>Jan</span><br>
+            <span>23</span><br>
+            <p class="news__time" hidden>12th, Jan 2023</p>
+          </div>
+          <img class="news-1" src="./assets/images/latest-news-1.jpg" alt="" >
+          <div>
+            <div class="latest-news-title news__headline">
+              Everything You Need to Know About Gold Medals
+            </div>
+            <div class="latest-news-content news__content">
+              Messi signed a two-year deal with PSG in the summer of 2021; his
+              term is up for renewal in June, but negotiations are at a
+              standstill right.
+            </div>
+          </div>
+        </div>
+        <div class="flex-box news__item-module">
+          <div class="date">
+            <span>15</span><br>
+            <span>Feb</span><br>
+            <span>23</span><br>
+            <p class="news__time" hidden>15th, Jan 2023</p>
+          </div>
+          <img class="news-1" src="./assets/images/latest-news-2.jpg" alt="" >
+          <div>
+            <div class="latest-news-title news__headline">
+              NBA FACT OR FICTION: LeBron James' Lakers benefit from a vast
+              free-throw discrepancy
+            </div>
+            <div class="latest-news-content news__content">
+              Let's get this out of the way right away: I think there are good
+              reasons to question the integrity of referees prior to Tim
+              Donaghy's resignation due to a gambling controversy given the
+              egregiousness of calls in a number of NBA playoff games from the
+              early 2000s.
+            </div>
+          </div>
+        </div>
+        <div class="flex-box news__item-module">
+          <div class="date">
+            <span>22</span><br>
+            <span>Feb</span><br>
+            <span>23</span><br>
+            <p class="news__time" hidden>22nd, Jan 2023</p>
+          </div>
+          <img class="news-1" src="./assets/images/latest-news-3.jpg" alt="" >
+          <div>
+            <div class="latest-news-title news__headline">
+              After winning the chaotic F1 Australian GP, Max Verstappen
+              criticizes the FIA
+            </div>
+            <div class="latest-news-content news__content">
+              Max Verstappen has led a swathe of driver criticism of the
+              decision-making at the Australian Grand Prix after the race was
+              stopped three times because of incidents on track.
+            </div>
+          </div>
+        </div>
+        <div class="flex-box news__item-module">
+          <div class="date">
+            <span>27</span><br>
+            <span>Feb</span><br>
+            <span>23</span><br>
+            <p class="news__time" hidden>27th, Jan 2023</p>
+          </div>
+          <img class="news-1" src="./assets/images/latest-news-4.jpg" alt="" >
+          <div>
+            <div class="latest-news-title news__headline">
+              How Harry Brook set a lofty goal, squandered it, then went off
+              like a rocket
+            </div>
+            <div class="latest-news-content news__content">
+              But, Brook's path to the top has not been easy, like so many
+              sudden triumphs. After his bold attempt to quickly advance into
+              contention as a Test opener failed in 2019,
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest News End -->
+
+    <!-- Shop Now Start -->
+
+    <div id="shop-now">
+      <div class="shop-now-container parallax">
+        <div class="shop-now-title">just run like the wind</div>
+        <button class="shop-now-btn" onclick="window.location.href='../Student_1/Html/cw-home.html' "><span>shop now</span></button>
+      </div>
+    </div>
+
+    <!-- Shop Now End -->
+
+    <!-- Products banner start -->
+    <div class="title-wrapper"><div class="box-6">New Arrivals</div></div>
+    
+
+    <div id="products-banner">
+      <div class="container">
+        <div class="item item-1">
+          <img
+            class="image-1"
+            src="./assets/images/product-banner-1.jpg"
+            alt=""
+          >
+        </div>
+
+        <div class="item item-2">
+          <img
+            class="image-1"
+            src="./assets/images/product-banner-2.jpg"
+            alt=""
+          >
+        </div>
+
+        <div class="item item-3">
+          <div class="item-container">
+            <p class="training_head">TRAINING</p>
+            <p class="training_text">
+              Choose the training program <br>
+              that best suits your needs and <br>
+              transform your shoe
+            </p>
+              <button class="product-btn" onclick="window.location.href='../Student_1/Html/cw-home.html' "><span>Discovery</span></button>
+          </div>
+        </div>
+
+        <div class="item item-4">
+          <div class="item-container">
+            <p class="running_head">RUNNING</p>
+            <p class="running_text">
+              Choose the training program <br>
+              that best suits your needs and <br>
+              transform your shoe
+            </p>
+            <button class="product-btn" onclick="window.location.href='../Student_1/Html/cw-home.html' "><span>Discovery</span></button>
+          </div>
+        </div>
+
+        <div class="item item-5">
+          <img
+            class="image-1"
+            src="./assets/images/product-banner-3.jpg"
+            alt=""
+          >
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Quiz start -->
+    <div id="quiz-banner">
+      <div class="flex-container">
+        <div class="flex-box-quiz-1">
+          <div class="quiz-text-1">A Community of</div>
+          <div class="quiz-text-1">Online Markereters</div>
+          <br>
+          <div class="quiz-text-2">
+            Educational and strategy for internet Markereters to launch and
+            scale marketing and business campaigns online
+          </div>
+          <button class="quiz_button" onclick="window.location.href='../Student_3/quiz/quizHomepage.html' "><span>Take Quiz</span></button>
+        </div>
+
+        <div class="flex-box-quiz-2">
+          <img class="quiz-2" src="./assets/images/quiz-banner.jpg" alt="" >
+        </div>
+      </div>
+    </div>
+    <!-- Quiz End -->
+
+    <!-- Video Start -->
+
+    <div id="video-banner">
+      <div class="box-4">Promotions</div>
+
+      <video
+        class="video-banner"
+        
+        poster="./assets/images/video-banner.jpg"
+        onclick="playPause()"
+      >
+        <source src="./assets/videos/banner_video.mp4" type="video/mp4" >
+
+        Your browser does not support the video tag.
+      </video>
+      <div class="pause-btn" onclick="playPause()"></div>
+
+      <script>
+        let bannerVideo = document.querySelector(".video-banner");
+        let pauseBtn = document.querySelector(".pause-btn");
+        console.log(pauseBtn);
+        function playPause() {
+          if (bannerVideo.paused) {
+            bannerVideo.play();
+            pauseBtn.style.backgroundImage = "none";
+          } else {
+            bannerVideo.pause();
+            pauseBtn.style.backgroundImage =
+              "url('./assets/images/play-button.png')";
+          }
+        }
+      </script>
+    </div>
+
+    <!-- Video End -->
+
+    <!-- Contact Us Start -->
+
+    <div id="contact-us">
+      <div class="box-5">Contact Us</div>
+
+      <div class="flex-parent-element">
+        <div class="flex-child-element map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5532045746527!2d-73.84906628433917!3d40.74985587932776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fd945137c79%3A0x6045c9d270878f21!2sArthur%20Ashe%20Stadium!5e0!3m2!1sen!2slk!4v1679216956545!5m2!1sen!2slk"
+            width="800"
+            height="650"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact-box">
+          <div class="contact-container">
+            <div class="contact-item-1">
+              <div style="color: green; font-size: 50px">
+                &#10073; Sports Next
+              </div>
+              <div>
+                Sports Next prides itself on being one of the best shops at
+                which to buy sport items.
+              </div>
+            </div>
+          </div>
+          <div class="contact-container">
+            <div class="contact-item-2">
+              <div class="main-icon-box">
+                <div>
+                  <i class="fas fa-map-marker-alt main-icon"></i>
+                </div>
+                <div>Location</div>
+              </div>
+
+              <div>
+                <div>New York 60 East</div>
+              </div>
+
+              <div>
+                <div>65th Street</div>
+              </div>
+              <div>
+                <div>NY 10065</div>
+              </div>
+            </div>
+            <div class="contact-item-2">
+              <div class="main-icon-box">
+                <div>
+                  <i class="fa-solid fa-clock main-icon"></i>
+                </div>
+                <div>Hours</div>
+              </div>
+
+              <div>
+                <div>Mon-Fri : 9am-6pm</div>
+              </div>
+
+              <div>
+                <div>Saturday : 9am-5pm</div>
+              </div>
+              <div>
+                <div>Sunday : 9am-7pm</div>
+              </div>
+            </div>
+            <div class="contact-item-2">
+              <div class="main-icon-box">
+                <div>
+                  <i class="fa-sharp fa-solid fa-arrow-pointer main-icon"></i>
+                </div>
+                <div>Social</div>
+              </div>
+
+              <div class="sub-icon">
+                <span class="social-icon"
+                  ><i class="fa-brands fa-facebook-f facebook-icon"></i
+                ></span>
+                <span>Facebook</span>
+              </div>
+
+              <div class="sub-icon">
+                <span class="social-icon">
+                  <i class="fa fa-pinterest pinterest-icon"></i
+                ></span>
+                <span>Pinterest</span>
+              </div>
+              <div class="sub-icon">
+                <span class="social-icon"
+                  ><i class="fa-brands fa-instagram instagram-icon"></i
+                ></span>
+                <span>Instagram</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us End -->
+
+    <!-- Footer Start -->
+
+    <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+    <footer>
+
+      <!-- Link to the Page Editor Page -->
+      <div>
+        <a href="./editor.html" class="editor">
+          Editor: Chathura Fernando
+        </a>
+      </div>
+  
+      <!--LOGO IS HERE-->
+      <div class="footer__content-container">
+        <div class="footer__logo">
+          <svg width="135" height="89" viewBox="0 0 135 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path 
+              class="logo-path" 
+              d="M16.9434 31.88V22.7C16.9434 21.98 16.8234 21.52 16.5834 21.32C16.3834 21.08 15.9234 20.96 15.2034 20.96H10.7634C7.12344 20.96 5.30344 19.18 5.30344 15.62V5.72C5.30344 2.2 7.16344 0.439997 10.8834 0.439997H16.7634C20.4834 0.439997 22.3434 2.2 22.3434 5.72V11.24H16.8834V6.56C16.8834 5.84 16.7634 5.38 16.5234 5.18C16.2834 4.94 15.8034 4.82 15.0834 4.82H12.5634C11.8434 4.82 11.3634 4.94 11.1234 5.18C10.8834 5.38 10.7634 5.84 10.7634 6.56V14.9C10.7634 15.62 10.8834 16.1 11.1234 16.34C11.3634 16.54 11.8434 16.64 12.5634 16.64H16.9434C20.6234 16.64 22.4634 18.4 22.4634 21.92V32.72C22.4634 36.24 20.5834 38 16.8234 38H11.0034C7.28344 38 5.42344 36.24 5.42344 32.72V27.2H10.8834V31.88C10.8834 32.6 11.0034 33.08 11.2434 33.32C11.4834 33.52 11.9634 33.62 12.6834 33.62H15.2034C15.9234 33.62 16.3834 33.52 16.5834 33.32C16.8234 33.08 16.9434 32.6 16.9434 31.88ZM27.8231 0.439997H40.1231C43.8431 0.439997 45.7031 2.2 45.7031 5.72V18.2C45.7031 21.72 43.8431 23.48 40.1231 23.48H33.2231V38H27.8231V0.439997ZM40.3031 17.36V6.56C40.3031 5.84 40.1831 5.38 39.9431 5.18C39.7031 4.94 39.2231 4.82 38.5031 4.82H33.2231V19.16H38.5031C39.2231 19.16 39.7031 19.04 39.9431 18.8C40.1831 18.56 40.3031 18.08 40.3031 17.36ZM55.8389 0.439997H62.4989C66.2189 0.439997 68.0789 2.2 68.0789 5.72V32.72C68.0789 36.24 66.2189 38 62.4989 38H55.8389C52.0789 38 50.1989 36.24 50.1989 32.72V5.72C50.1989 2.2 52.0789 0.439997 55.8389 0.439997ZM62.6789 31.88V6.56C62.6789 5.84 62.5589 5.38 62.3189 5.18C62.0789 4.94 61.5989 4.82 60.8789 4.82H57.3989C56.6789 4.82 56.1989 4.94 55.9589 5.18C55.7589 5.38 55.6589 5.84 55.6589 6.56V31.88C55.6589 32.6 55.7589 33.08 55.9589 33.32C56.1989 33.52 56.6789 33.62 57.3989 33.62H60.8789C61.5989 33.62 62.0789 33.52 62.3189 33.32C62.5589 33.08 62.6789 32.6 62.6789 31.88ZM79.4536 22.82V38H74.0536V0.439997H86.3536C90.0736 0.439997 91.9336 2.2 91.9336 5.72V17.48C91.9336 20.52 90.5936 22.26 87.9136 22.7L93.8536 38H88.0336L82.3936 22.82H79.4536ZM79.4536 4.82V18.5H84.7336C85.4536 18.5 85.9336 18.4 86.1736 18.2C86.4136 17.96 86.5336 17.48 86.5336 16.76V6.56C86.5336 5.84 86.4136 5.38 86.1736 5.18C85.9336 4.94 85.4536 4.82 84.7336 4.82H79.4536ZM113.023 0.439997V4.82H106.723V38H101.323V4.82H95.0227V0.439997H113.023ZM127.217 31.88V22.7C127.217 21.98 127.097 21.52 126.857 21.32C126.657 21.08 126.197 20.96 125.477 20.96H121.037C117.397 20.96 115.577 19.18 115.577 15.62V5.72C115.577 2.2 117.437 0.439997 121.157 0.439997H127.037C130.757 0.439997 132.617 2.2 132.617 5.72V11.24H127.157V6.56C127.157 5.84 127.037 5.38 126.797 5.18C126.557 4.94 126.077 4.82 125.357 4.82H122.837C122.117 4.82 121.637 4.94 121.397 5.18C121.157 5.38 121.037 5.84 121.037 6.56V14.9C121.037 15.62 121.157 16.1 121.397 16.34C121.637 16.54 122.117 16.64 122.837 16.64H127.217C130.897 16.64 132.737 18.4 132.737 21.92V32.72C132.737 36.24 130.857 38 127.097 38H121.277C117.557 38 115.697 36.24 115.697 32.72V27.2H121.157V31.88C121.157 32.6 121.277 33.08 121.517 33.32C121.757 33.52 122.237 33.62 122.957 33.62H125.477C126.197 33.62 126.657 33.52 126.857 33.32C127.097 33.08 127.217 32.6 127.217 31.88ZM64.1133 46.44H69.0933V84H63.6333L55.7133 56.88V84H50.7333V46.44H56.4333L64.1133 72.78V46.44ZM80.8027 79.62H91.6627V84H75.3427V46.44H91.2427V50.82H80.8027V62.4H89.4427V66.78H80.8027V79.62ZM106.889 64.8L114.929 84H108.929L103.889 69.72L98.8491 84H93.0291L100.949 64.8L93.5691 46.44H99.5691L103.889 59.94L108.269 46.44H114.149L106.889 64.8ZM133.472 46.44V50.82H127.172V84H121.772V50.82H115.472V46.44H133.472Z" 
+              fill="white"
+            />
+            <g clip-path="url(#clip0_287_998)">
+             <path 
+              class="logo-path" 
+              d="M6 67H5.1C5.55674 71.3259 7.48405 75.3642 10.5599 78.4401C13.6358 81.516 17.6741 83.4433 22 83.9V83C22 78.7565 20.3143 74.6869 17.3137 71.6863C14.3131 68.6857 10.2435 67 6 67ZM41.6 63.5H43C42.6579 58.9892 40.7175 54.7485 37.5279 51.5406C34.3383 48.3326 30.1088 46.368 25.6 46C25.5205 46.4622 25.487 46.9312 25.5 47.4C25.5 51.67 27.1962 55.7651 30.2156 58.7844C33.2349 61.8038 37.33 63.5 41.6 63.5ZM41.6 66.5C39.088 66.5133 36.5984 66.0283 34.2751 65.0731C31.9518 64.1179 29.841 62.7115 28.0647 60.9353C26.2885 59.159 24.8821 57.0482 23.9269 54.7249C22.9717 52.4016 22.4867 49.912 22.5 47.4C22.487 46.9312 22.5205 46.4622 22.6 46C17.9828 46.3568 13.6525 48.3789 10.4149 51.6901C7.17727 55.0013 5.25294 59.3759 5 64H6C11.0391 64 15.8718 66.0018 19.435 69.565C22.9982 73.1282 25 77.9609 25 83V84C29.6241 83.7471 33.9987 81.8227 37.3099 78.5851C40.6211 75.3475 42.6432 71.0172 43 66.4L41.6 66.5Z" 
+              fill="white"
+             />
+            </g>
+            <defs>
+            <rect width="48" height="48" fill="white" transform="translate(0 41)"/>
+            </defs>
+          </svg>
+        </div>
+    
+        <ul>
+          <li class="footer__heading">Navigate</li>
+          <li><a href="../../Student_2/main.html" class="footer__content">Home</a></li>
+          <li><a href="../../Student_2/comment-form.html" class="footer__content">Query form</a></li>
+          <li><a href="../Student_3/quiz/quizHomepage.html" class="footer__content">Quiz</a></li>
+          <li><a href="../Student_3/studentDetails.html" class="footer__content">Student Details</a></li>
+          <li><a href="../../Student_4/Sitemap.html" class="footer__content">Sitemap</a></li>
+          <li><a href="../../Student_4/Gallery.html" class="footer__content">Gallery</a></li>
+        </ul>
+    
+        <ul>
+          <li class="footer__heading">Sports</li>
+          <li><a href="../../Student_2/content_page.html" class="footer__content">Badminton</a></li>
+          <li><a href="../../Student_4/Content-page-basketball.html" class="footer__content">Basketball</a></li>
+          <li><a href="../Student_3/content-page.html" class="footer__content">Cricket</a></li>
+          <li><a href="../../Student_1/Html/Content_page.html" class="footer__content">Football</a></li>
+        </ul>
+    
+        <ul>
+          <li class="footer__heading">Support</li>
+          <li><a href="../Student_3/studentDetails.html" class="footer__content">About Us</a></li>
+          <li><a href="../../Student_1/Html/cw-home.html#offer-bg-image" class="footer__content">Redeem Gift</a></li>
+          <li><a href="../../Student_2/main.html#contact-us" class="footer__content">Contact Us</a></li>
+        </ul>
+    
+        <div class="footer__social-container">
+          <div class="social-icon-container instagram-container"><i class="fa-brands fa-instagram"></i></div>
+          <div class="social-icon-container facebook-container"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="social-icon-container tiktok-container"><i class="fa-brands fa-tiktok"></i></div>
+          <div class="social-icon-container linkedin-container"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="social-icon-container youtube-container"><i class="fa-brands fa-youtube"></i></div>
+          <div class="social-icon-container twitter-container"><i class="fa-brands fa-twitter"></i></div>
+          
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+
+    <script src="js/content-send.js"></script>
+    <script>
+      const video = document.getElementById("video").play();
+    </script>
+  </body>
+</html>
